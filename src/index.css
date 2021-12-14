@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import '~antd/dist/antd.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
