@@ -15,9 +15,13 @@ import EffectDemo2 from "./components/effectLesson/demo2";
 import EffectDemo3 from "./components/effectLesson/demo3";
 import EffectDemo4 from "./components/effectLesson/demo4";
 import RefDemo1 from "./components/refLesson/demo1";
-import MemoDemo1 from "./components/memoLesson/demo1";
+import MemoDemo1 from "./components/memoLesson";
+import UseMemoPractice from "./components/memoLesson/Practice";
 import ContextDemo1 from "./components/contextLesson";
 import ReducerDemo1 from "./components/reducerLesson";
+import CallbackDemo1 from "./components/callbackLesson";
+import CallbackPractice from "./components/callbackLesson/Practice";
+import CustomHooks from "./components/customHooks";
 
 export default function App() {
     return (
@@ -37,8 +41,12 @@ export default function App() {
                         <Route path="/effect-demo4" element={<EffectDemo4/>}/>
                         <Route path="/useRef-demo1" element={<RefDemo1/>}/>
                         <Route path="/useMemo-demo1" element={<MemoDemo1/>}/>
+                        <Route path="/useCallback-demo1" element={<CallbackDemo1/>}/>
+                        <Route path="/useCallback-practice" element={<CallbackPractice/>}/>
+                        <Route path="/useMemo-practice" element={<UseMemoPractice/>}/>
                         <Route path="/useContext-demo1" element={<ContextDemo1/>}/>
                         <Route path="/useReducer-demo1" element={<ReducerDemo1/>}/>
+                        <Route path="/customHooks-demo1" element={<CustomHooks/>}/>
                         <Route path="/" element={<div>Home</div>}/>
                     </Routes>
                 </div>

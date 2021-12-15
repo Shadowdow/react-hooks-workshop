@@ -1,0 +1,20 @@
+.image-01 {
+    background-image: url("image01.jpg");
+    background-size: 100%;
+    width: 836px;
+    height: 68px;
+}
+
+.image-02 {
+    background-image: url("image02.jpg");
+    background-size: 100%;
+    width: 492px;
+    height: 369px;
+}
+
+.image-03 {
+    background-image: url("image03.jpg");
+    background-size: 100%;
+    width: 585px;
+    height: 186px;
+}

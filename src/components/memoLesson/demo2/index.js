@@ -1,5 +1,4 @@
 import React, {useCallback, useState} from 'react';
-import ChildA from "./ChildA";
 import {Button} from "antd";
 
 function MemoDemo1() {
@@ -23,3 +22,17 @@ function MemoDemo1() {
 }
 
 export default MemoDemo1;
+
+function ChildA(props) {
+    const {onClick} = props;
+
+    const handleClick = useCallback(()=> {
+        onClick();
+    }, [])
+
+    return (
+        <div className="mb-16">Child
+            <Button onClick={handleClick}>调用父组件的方法</Button>
+        </div>
+    );
+}

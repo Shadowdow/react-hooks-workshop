@@ -44,6 +44,17 @@ const Sider = () => {
     const useMemoMenus = [{
         url: 'useMemo-demo1',
         name: 'useMemo'
+    },{
+        url: 'useMemo-practice',
+        name: 'useMemo练习'
+    }]
+
+    const useCallbackMenus = [{
+        url: 'useCallback-demo1',
+        name: 'useCallback'
+    },{
+        url: 'useCallback-practice',
+        name: 'useCallback练习'
     }]
 
     const useEffectMenus = [{
@@ -70,9 +81,14 @@ const Sider = () => {
         name: 'useReducer'
     }]
 
+    const customHooksMenus = [{
+        url: 'customHooks-demo1',
+        name: '自定义 Hook'
+    }]
+
     return (
         <Menu mode="inline" openKeys={openKeys} onOpenChange={onOpenChange} style={{ width: 256, height: '100vh' }} theme="dark">
-            <SubMenu key="useState" icon={<MailOutlined />} title="useState">
+            <SubMenu key="useState" title="useState">
                 {
                     useStateMenus.map(({url, name})=>
                         (
@@ -82,7 +98,7 @@ const Sider = () => {
                         ))
                 }
             </SubMenu>
-            <SubMenu key="useRef" icon={<AppstoreOutlined />} title="useRef">
+            <SubMenu key="useRef" title="useRef">
                 {
                     useRefMenus.map(({url, name})=>
                         (
@@ -92,7 +108,7 @@ const Sider = () => {
                         ))
                 }
             </SubMenu>
-            <SubMenu key="useEffect" icon={<SettingOutlined />} title="useEffect">
+            <SubMenu key="useEffect" title="useEffect">
                 {
                     useEffectMenus.map(({url, name})=>
                         (
@@ -102,7 +118,7 @@ const Sider = () => {
                         ))
                 }
             </SubMenu>
-            <SubMenu key="useMemo" icon={<SettingOutlined />} title="useMemo">
+            <SubMenu key="useMemo" title="useMemo">
                 {
                     useMemoMenus.map(({url, name})=>
                         (
@@ -112,7 +128,17 @@ const Sider = () => {
                         ))
                 }
             </SubMenu>
-            <SubMenu key="useContext" icon={<SettingOutlined />} title="useContext">
+            <SubMenu key="useCallBack" title="useCallBack">
+                {
+                    useCallbackMenus.map(({url, name})=>
+                        (
+                            <Menu.Item key={name}>
+                                <Link to={url}>{name}</Link>
+                            </Menu.Item>
+                        ))
+                }
+            </SubMenu>
+            <SubMenu key="useContext" title="useContext">
                 {
                     useContextMenus
                         .map(({url, name})=>
@@ -123,9 +149,20 @@ const Sider = () => {
                         ))
                 }
             </SubMenu>
-            <SubMenu key="useReducer" icon={<SettingOutlined />} title="useReducer">
+            <SubMenu key="useReducer" title="useReducer">
                 {
                     useReducerMenus
+                        .map(({url, name})=>
+                            (
+                                <Menu.Item key={name}>
+                                    <Link to={url}>{name}</Link>
+                                </Menu.Item>
+                            ))
+                }
+            </SubMenu>
+            <SubMenu key="自定义Hook" title="自定义 Hook">
+                {
+                    customHooksMenus
                         .map(({url, name})=>
                             (
                                 <Menu.Item key={name}>
