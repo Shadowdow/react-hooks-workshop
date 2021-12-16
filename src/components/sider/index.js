@@ -1,6 +1,5 @@
 import React from 'react';
 import { Menu } from 'antd';
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import {Link} from "react-router-dom";
 
 const { SubMenu } = Menu;
@@ -21,19 +20,19 @@ const Sider = () => {
 
     const useStateMenus = [{
         url: '/state-demo1',
-        name: '重渲染'
+        name: '数据流'
     },{
         url: '/state-demo2',
-        name: 'state-对象'
-    },{
-        url: '/state-demo3',
-        name: 'state-数组'
+        name: 'state-引用'
     },{
         url: '/state-demo4',
         name: '惰性初值'
     },{
         url: '/state-demo5',
         name: 'setState异步'
+    }, {
+        url: '/state-Practice',
+        name: 'setState练习'
     }]
 
     const useRefMenus = [{
@@ -69,6 +68,9 @@ const Sider = () => {
     },{
         url: '/effect-demo4',
         name: '练习2'
+    },{
+        url: '/effect-demo5',
+        name: '练习3'
     }]
 
     const useContextMenus = [{
@@ -84,6 +86,9 @@ const Sider = () => {
     const customHooksMenus = [{
         url: 'customHooks-demo1',
         name: '自定义 Hook'
+    },{
+        url: '/customHooks-practice',
+        name: '自定义 Hook练习'
     }]
 
     return (
