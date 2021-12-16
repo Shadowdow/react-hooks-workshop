@@ -117,7 +117,7 @@ const getList = (searchKey)=> {
 const Practice = ()=> {
     return (
         <div>
-            <div className='mb-16 font-500 text-18'>练习：到src/pages/stateLesson/Practice/index去完成我们的练习把～！</div>
+            <div className='mb-16 font-500 text-18 text-brand'>练习：到src/pages/stateLesson/Practice/index去完成我们的练习把～！</div>
             <div className='mb-16 text-16 text-brand'>练习1</div>
             <Practice01/>
             <div className='mb-16 text-16 mt-16 text-brand'>练习2</div>

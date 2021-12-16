@@ -16,6 +16,7 @@ import EffectDemo3 from "./pages/effectLesson/demo3";
 import EffectDemo4 from "./pages/effectLesson/demo4";
 import EffectDemo5 from "./pages/effectLesson/demo5";
 import RefDemo1 from "./pages/refLesson/demo1";
+import RefPractice from "./pages/refLesson/Practice";
 import MemoDemo1 from "./pages/memoLesson";
 import UseMemoPractice from "./pages/memoLesson/Practice";
 import ContextDemo1 from "./pages/contextLesson";
@@ -43,6 +44,7 @@ export default function App() {
                         <Route path="/effect-demo4" element={<EffectDemo4/>}/>
                         <Route path="/effect-demo5" element={<EffectDemo5/>}/>
                         <Route path="/useRef-demo1" element={<RefDemo1/>}/>
+                        <Route path="/useRef-practice" element={<RefPractice/>}/>
                         <Route path="/useMemo-demo1" element={<MemoDemo1/>}/>
                         <Route path="/useCallback-demo1" element={<CallbackDemo1/>}/>
                         <Route path="/useCallback-practice" element={<CallbackPractice/>}/>

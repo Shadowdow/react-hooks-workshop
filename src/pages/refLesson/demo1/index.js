@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 
 import './index.css';
 import {Button, Input} from "antd";
@@ -22,6 +22,7 @@ function RefDemo1() {
                 <Counter/>
             </li>
         </ul>
+        <div className='text-brand'>不要在 render 期间读取或写入 ref.current</div>因为ref的change不会触发函数调用，会导致页面不能即使更新
     </div>
   );
 }

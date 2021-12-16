@@ -38,6 +38,9 @@ const Sider = () => {
     const useRefMenus = [{
         url: 'useRef-demo1',
         name: 'useRef'
+    }, {
+        url: 'useRef-practice',
+        name: 'useRef练习'
     }]
 
     const useMemoMenus = [{

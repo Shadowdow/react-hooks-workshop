@@ -100,6 +100,7 @@ const Practice04 = () => {
 const Practice = ()=>
     (
         <div>
+            <div className='mb-16 font-500 text-16 text-brand'>src/pages/memoLesson/Practice/index</div>
             <div className='mb-16 font-500 text-16'>下列练习均是项目中出现过的代码，均具有真实性哦～</div>
             <div className='text-brand'>练习1</div>
             <Practice01/>
