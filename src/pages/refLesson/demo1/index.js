@@ -18,7 +18,7 @@ function RefDemo1() {
                 <DomRef/>
             </li>
             <li className='mb-16'>
-                <div className='flex items-center mb-16'><SmileOutlined className="mr-8"/>保持可变变量</div>
+                <div className='flex items-center mb-16'><SmileOutlined className="mr-8"/>保持可变变量，可以让我们始终能访问到最新的值</div>
                 <Counter/>
             </li>
         </ul>
