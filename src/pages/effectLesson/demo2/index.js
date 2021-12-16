@@ -58,7 +58,6 @@ function EffectDemo2() {
                 </>
             )
         }
-        <div className="text-16 font-500 mb-16">那么这个清除函数是什么时候执行的呢？</div>
     </div>
   );
 }
