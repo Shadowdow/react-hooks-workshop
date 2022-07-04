@@ -1,0 +1,12 @@
+.dispatcher {
+    background-image: url("dispatcher.jpg");
+    background-size: 100%;
+    width: 368px;
+    height: 435px;
+}
+.renderWithHooks {
+    background-image: url("renderwithhooks.jpg");
+    background-size: 100%;
+    width: 540px;
+    height: 724px;
+}

@@ -1,0 +1,66 @@
+.hooksLife1 {
+    background-image: url("hookslife1.png");
+    background-size: 100%;
+    width: 654px;
+    height: 645px;
+}
+
+.componentDidMount1 {
+    background-image: url("componentDidMount1.jpg");
+    background-size: 100%;
+    width: 427px;
+    height: 207px;
+}
+
+.componentDidMount2 {
+    background-image: url("componentDidMount2.jpg");
+    background-size: 100%;
+    width: 456px;
+    height: 108px;
+}
+
+.shouldComponentUpdate1 {
+    background-image: url("shouldComponentUpdate1.jpg");
+    background-size: 100%;
+    width: 453px;
+    height: 284px;
+}
+.shouldComponentUpdate2 {
+    background-image: url("shouldComponentUpdate2.jpg");
+    background-size: 100%;
+    width: 629px;
+    height: 98px;
+}
+
+.componentDidUpdate1 {
+    background-image: url("componentDidUpdate1.jpg");
+    background-size: 100%;
+    width: 375px;
+    height: 187px;
+}
+.componentDidUpdate2 {
+    background-image: url("componentDidUpdate2.jpg");
+    background-size: 100%;
+    width: 528px;
+    height: 41px;
+}
+
+.componentDidUpdate3 {
+    background-image: url("componentDidUpdate3.jpg");
+    background-size: 100%;
+    width: 359px;
+    height: 212px;
+}
+
+.componentWillUnmount1 {
+    background-image: url("componentWillUnmount1.jpg");
+    background-size: 100%;
+    width: 338px;
+    height: 98px;
+}
+.componentWillUnmount2 {
+    background-image: url("componentWillUnmount2.jpg");
+    background-size: 100%;
+    width: 339px;
+    height: 136px;
+}
