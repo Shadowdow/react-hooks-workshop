@@ -10,3 +10,10 @@
     width: 949px;
     height: 505px;
 }
+
+.renderOrder {
+    background-image: url("renderOrder.jpg");
+    background-size: 100%;
+    width: 1536px;
+    height: 67px;
+}
