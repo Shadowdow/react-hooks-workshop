@@ -9,7 +9,8 @@ const UseEffectLesson3: React.FC = () => {
     <Typography>
       <Title>useEffect</Title>
       <Paragraph>
-        Hook接受useEffect传入的callback返回一个函数，在Fiber的清理阶段将会执行这个函数，从而达到清理effect的效果：
+        Hook 接受 useEffect 传入的 callback 返回一个函数，在 Fiber
+        的清理阶段将会执行这个函数，从而达到清理 effect 的效果：
         <div className="useEffectClean mt-20 mb-20" />
       </Paragraph>
     </Typography>

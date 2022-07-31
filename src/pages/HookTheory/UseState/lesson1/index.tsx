@@ -18,14 +18,17 @@ const UseStateLesson1: React.FC = () => {
         <div className="useState1 mt-20" />
       </Paragraph>
       <Paragraph>
-        作用：返回一个状态以及能修改这个状态的setter，在其他语言称为元组（tuple），一旦mount之后只能通过这个setter修改这个状态。
+        作用：返回一个状态以及能修改这个状态的 setter
+        ，在其他语言称为元组（tuple），一旦 mount 之后只能通过这个 setter
+        修改这个状态。
         <ul>
           <li>
-            使用了Hooks
-            API的函数组件，返回的setter可以改变组件的状态，并且引起组件re-render
+            使用了 Hooks API 的函数组件，返回的 setter
+            可以改变组件的状态，并且引起组件 re-render
           </li>
           <li>
-            和一般意义上的hook（钩子）不一样，这里的hook可以多次调用且产生不同的效果，且hook随
+            和一般意义上的 hooks（钩子）不一样，这里的 hooks
+            可以多次调用且产生不同的效果，且 hooks 随
             <Link
               href="https://cloud.tencent.com/developer/article/2022276"
               target="_blank"
@@ -45,7 +48,7 @@ const UseStateLesson1: React.FC = () => {
         >
           React文档
         </Link>
-        中介绍了React Hooks的如下规则
+        中介绍了 React Hooks 的如下规则
         <Title level={3}>只在 React 函数中调用 Hook</Title>
         <Text strong> 不要在普通的 JavaScript 函数中调用 Hook。</Text> 你可以：
         <ul>

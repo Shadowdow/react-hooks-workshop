@@ -20,13 +20,13 @@ const UseEffectLesson1: React.FC = () => {
         </Text>
       </Paragraph>
       <Paragraph>
-        作用：处理函数组件中的副作用，如异步操作、延迟操作等，可以替代Class
-        Component的<Text code>componentDidMount</Text>、
-        <Text code>componentDidUpdate </Text>、
-        <Text code>componentWillUnmount</Text>等生命周期。
+        作用：处理函数组件中的副作用，如异步操作、延迟操作等，可以替代 Class
+        Component 的 <Text code>componentDidMount</Text> 、
+        <Text code>componentDidUpdate </Text> 、
+        <Text code>componentWillUnmount</Text> 等生命周期。
       </Paragraph>
 
-      <Title level={3}>React Hooks模拟生命周期</Title>
+      <Title level={3}>React Hooks 模拟生命周期</Title>
       <Paragraph>
         <Title level={4}>constructor</Title>
         <div className="hooksLife1 mt-20 mb-20" />
@@ -70,8 +70,8 @@ const UseEffectLesson1: React.FC = () => {
         hooks 模拟 componentDidUpdate
         <div className="componentDidUpdate2 mt-20 mb-20" />
         值得注意的是，这里的回调函数会在每次渲染后调用，因此不仅可以访问
-        componentDidUpdate，还可以访问componentDidMount，如果只想模拟
-        componentDidUpdate，我们可以这样来实现。
+        componentDidUpdate ，还可以访问 componentDidMount ，如果只想模拟
+        componentDidUpdate ，我们可以这样来实现。
         <div className="componentDidUpdate3 mt-20 mb-20" />
         useRef
         在组件中创建“实例变量”。它作为一个标志来指示组件是否处于挂载或更新阶段。当组件更新完成后在会执行
@@ -97,8 +97,8 @@ const UseEffectLesson1: React.FC = () => {
           <li>可以使用函数组合，嵌套，实现功能更加强大的组件。</li>
           <li>组件不会被实例化，整体渲染性能得到提升。</li>
         </ul>
-        但是 hooks
-        模拟的生命周期与class中的生命周期不尽相同，我们在使用时，还是需要思考业务场景下那种方式最适合。
+        但是 hooks 模拟的生命周期与 class
+        中的生命周期不尽相同，我们在使用时，还是需要思考业务场景下那种方式最适合。
       </Paragraph>
     </Typography>
   );

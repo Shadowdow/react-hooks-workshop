@@ -17,3 +17,10 @@
     width: 1536px;
     height: 67px;
 }
+
+.fiber-update {
+    background-image: url("fiber-update.png");
+    background-size: 100%;
+    width: 903px;
+    height: 207px;
+}

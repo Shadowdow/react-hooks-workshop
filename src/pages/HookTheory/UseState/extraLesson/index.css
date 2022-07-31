@@ -1,0 +1,29 @@
+
+
+.fiber-constructor {
+    background-image: url("fiber-constructor.png");
+    background-size: 100%;
+    width: 897px;
+    height: 208px;
+}
+
+.fiber-link {
+    background-image: url("fiber-link.jpg");
+    background-size: 100%;
+    width: 1731px;
+    height: 720px;
+}
+
+.fiber-flow {
+    background-image: url("fiber-flow.jpg");
+    background-size: 100%;
+    width: 750px;
+    height: 858px;
+}
+
+.helloWorld {
+    background-image: url("helloWorld.png");
+    background-size: 100%;
+    width: 869px;
+    height: 475px;
+}
