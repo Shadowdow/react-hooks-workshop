@@ -4,3 +4,17 @@
   width: 850px;
   height: 600px;
 }
+
+.hookFirstDemo {
+  background-image: url("hookfirstdemo.jpg");
+  background-size: 100%;
+  width: 425px;
+  height: 317px;
+}
+
+.questionIcon {
+  background-image: url("questionIcon.png");
+  background-size: 100%;
+  width: 593px;
+  height: 291px;
+}
