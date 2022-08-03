@@ -1,6 +1,28 @@
-.functionComp {
-    background-image: url("functionComp.jpg");
+.fourhooks {
+    background-image: url("fourhooks.png");
     background-size: 100%;
-    width: 854px;
-    height: 689px;
+    /*width: 1082px;*/
+    /*height: 612px;*/
+    width: 800px;
+    height: 400px;
+    object-fit: contain ;
+}
+
+.memoizedState1 {
+    background-image: url("memoizedState1.png");
+    background-size: 100%;
+    /*width: 1658px;*/
+    /*height: 1298px;*/
+    width: 800px;
+    height: 640px;
+
+}
+
+.memoizedState2 {
+    background-image: url("memoizedState2.png");
+    background-size: 100%;
+    /*width: 1920px;*/
+    /*height: 1319px;*/
+    width: 800px;
+    height: 550px;
 }

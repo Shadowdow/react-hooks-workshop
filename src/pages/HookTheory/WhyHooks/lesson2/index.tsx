@@ -1,52 +1,74 @@
 import React from "react";
-import { Typography } from "antd";
-
+import { Divider, Typography } from "antd";
+import "./index.css";
 const { Title, Paragraph, Text } = Typography;
 
 const WhyHooksLesson2: React.FC = () => {
   return (
     <Typography>
-      <Title>Class Component 复用困局</Title>
+      <Title>Hooks 怎么执行的？</Title>
+      <Divider />
       <Paragraph>
-        组件并不是单纯的信息孤岛，组件之间是可能会产生联系的：一方面是数据的共享，另一方面是功能的复用。
-        <ul>
+        <Title level={2}>Hooks是从哪来的？</Title>以 useStatus
+        为例：其实hooks都是通过{" "}
+        <Text code strong>
+          resolveDispatcher(){" "}
+        </Text>
+        创建的。
+        <div className={"flex my-20"}>
+          <div className="dispatcher mr-20" />
+          <div className="reactCurrentDispatcher" />
+        </div>
+        我们看到
+        <Text type={"danger"} code>
+          {" "}
+          ReactCurrentDispatcher.current
+        </Text>
+        初始化的时候为null，然后就没任何下文了。
+      </Paragraph>
+
+      <Paragraph>
+        <Title level={2}>函数组件是什么时候执行的？</Title>
+        <Text code strong>
+          renderWithHooks
+        </Text>{" "}
+        函数作用是调用函数组件,所有的函数组件都会在
+        <Text code strong>
+          renderWithHooks
+        </Text>{" "}
+        中执行。
+      </Paragraph>
+
+      <Paragraph>
+        <div className="renderWithHooks2" />
+        <Title level={4}>执行步骤</Title>
+        <ol>
           <li>
-            对于组件之间数据共享的问题，React官方采用<Text strong> 单向
-            数据流（Flux）</Text>来解决
+            清空 <Text code>workInProgress</Text> 树的{" "}
+            <Text code>memoizedState</Text> 和 <Text code>updateQueue</Text>
+          </li>
+          <li>判断当前函数组件是否是第一次渲染</li>
+          <li>
+            调用 <Text code>Component(props, secondArg)</Text>{" "}
+            执行我们的函数组件{" "}
+            <Text type={"danger"}>
+              把 hooks 信息依次保存到 <Text code>workInProgress</Text> 树上
+            </Text>
           </li>
           <li>
-            针对（有状态）组件的复用，React团队给出过许多的方案，早期使用CreateClass
-            + Mixins， 在使用Class Component取代CreateClass之后又设计了
-            <Text code>Render Props</Text>和{" "}
-            <Text code>Higher Order Component</Text>， 直到再后来的Function
-            Component + Hooks设计，React团队对于组件复用的探索从来没有停止过...
+            将 <Text code>ContextOnlyDispatcher</Text> 赋值给{" "}
+            <Text code>ReactCurrentDispatcher.current</Text> ---{" "}
+            <Text type={"danger"}> hooks只能在函数组件中调用</Text>
           </li>
-        </ul>
+          <li>重新置空一些变量</li>
+        </ol>
       </Paragraph>
       <Paragraph>
-        HOC 使用（老生常谈）的一些问题：
-        <ul>
-          <li>问题1：嵌套地狱，每一次 HOC 调用都会产生一个组件实例</li>
-          <li>
-            问题2：可以使用类装饰器缓解组件嵌套带来的可维护性问题，但装饰器本质上还是 HOC
-          </li>
-          <li>问题3：包裹太多层级之后，可能会带来 props 属性的覆盖问题</li>
-        </ul>
-      </Paragraph>
-      <Paragraph>
-        Render Props：
-        <ul>
-          <li>优点：数据流向更直观了，子孙组件可以很明确地看到数据来源</li>
-          <li>
-            缺点1：本质上 Render
-            Props 是基于闭包实现的，大量地用于组件的复用将不可避免地引入了callback
-            hell（回调地狱）问题
-          </li>
-          <li>
-            缺点2：丢失了组件的上下文，因此没有<Text code>this.props</Text>
-            属性，不能像 HOC 那样访问<Text code>this.props.children</Text>
-          </li>
-        </ul>
+        其实，我们并没有在函数组件中调用 hooks
+        ，都是ContextOnlyDispatcher对象上生成hooks。
+        <div />
+        通过这种函数组件执行赋值不同的hooks对象方式，判断在hooks执行是否在函数组件内部，捕获并抛出异常的。
+        <div className="contextOnlyDispatcher" />
       </Paragraph>
     </Typography>
   );

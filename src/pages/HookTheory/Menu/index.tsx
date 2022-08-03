@@ -28,19 +28,19 @@ const HooksMenu = () => {
   const whyHooksMenus = [
     {
       url: "/HookTheory/why-hooks/lesson1",
-      name: "React组件设计理论",
+      name: "什么是 Hooks ",
     },
     {
       url: "/HookTheory/why-hooks/lesson2",
-      name: "Class Component 复用困局",
+      name: "Hooks 是从哪来的？",
     },
     {
       url: "/HookTheory/why-hooks/lesson3",
-      name: "Function Component 缺失的功能",
+      name: "Hooks 怎么保存的？",
     },
     {
       url: "/HookTheory/why-hooks/lesson4",
-      name: "Function Component + Hook 黄金搭档",
+      name: "Deps 为什么重要？",
     },
   ];
 

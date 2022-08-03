@@ -1,0 +1,28 @@
+
+.dispatcher{
+    background-image: url("dispatcher.png");
+    background-size: 100%;
+    width: 691px;
+    height: 154px;
+}
+
+.reactCurrentDispatcher{
+    background-image: url("ReactCurrentDispatcher.png");
+    background-size: 100%;
+    width: 538px;
+    height: 111px;
+}
+
+.renderWithHooks2 {
+    background-image: url("renderwithhooks2.png");
+    background-size: 100%;
+    width: 869px;
+    height: 1165px;
+}
+
+.contextOnlyDispatcher {
+    background-image: url("ContextOnlyDispatcher.png");
+    background-size: 100%;
+    width: 1689px;
+    height: 559px;
+}
