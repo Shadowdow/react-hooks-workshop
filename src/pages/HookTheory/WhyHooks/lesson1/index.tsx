@@ -2,7 +2,8 @@ import React from "react";
 import { Typography } from "antd";
 import "./index.css";
 import FirstDemo from "./firstDemo";
-import Question from "./question";
+import FunctionQuestion from "./functionQuestion";
+import ClassQuestion from "./classQuestion";
 
 const { Title, Paragraph, Text, Link } = Typography;
 
@@ -37,8 +38,13 @@ const WhyHooksLesson1: React.FC = () => {
           <Text type={"success"}>小试牛刀</Text>
         </Title>
         <div className={"flex"}>
-          <div className="questionIcon" />
-          <Question />
+          <div className="classQuestionIcon" />
+          <ClassQuestion />
+        </div>
+
+        <div className={"flex mt-40"}>
+          <div className="functionQuestionIcon" />
+          <FunctionQuestion />
         </div>
       </Typography>
 

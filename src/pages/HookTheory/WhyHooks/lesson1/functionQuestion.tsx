@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "antd";
 
-const Question: React.FC = () => {
+const FunctionQuestion: React.FC = () => {
   const [num, setNumber] = React.useState(0);
   const handleClick = () => {
     for (let i = 0; i < 5; i++) {
@@ -19,4 +19,4 @@ const Question: React.FC = () => {
   );
 };
 
-export default Question;
+export default FunctionQuestion;

@@ -49,18 +49,18 @@ const HooksMenu = () => {
       url: "/HookTheory/useState/lesson1",
       name: "what is useState?",
     },
-    {
-      url: "/HookTheory/useState/lesson2",
-      name: "为什么只能在React函数中调用Hook",
-    },
+    // {
+    //   url: "/HookTheory/useState/lesson2",
+    //   name: "为什么只能在React函数中调用Hook",
+    // },
     {
       url: "/HookTheory/useState/extraLesson",
       name: "Fiber",
     },
-    {
-      url: "/HookTheory/useState/lesson3",
-      name: "为什么只在最顶层使用 Hook",
-    },
+    // {
+    //   url: "/HookTheory/useState/lesson3",
+    //   name: "为什么只在最顶层使用 Hook",
+    // },
     {
       url: "/HookTheory/useState/lesson4",
       name: "useStatePractice",

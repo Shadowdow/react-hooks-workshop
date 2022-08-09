@@ -18,6 +18,8 @@ const WhyHooksLesson3: React.FC = () => {
         <Text code>workInProgress.memoizedState</Text>。
       </Paragraph>
       <Divider />
+      <Title level={3}>函数组件初始化</Title>
+      <div className="mountWork mt-20 mb-20" />
       <Paragraph>
         当函数组件执行之后，四个hooks和workInProgress将是如图的关系
         <div className="memoizedState1 mt-20 mb-20" />

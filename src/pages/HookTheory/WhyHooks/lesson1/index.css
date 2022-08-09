@@ -6,9 +6,17 @@
   height: 317px;
 }
 
-.questionIcon {
-  background-image: url("questionIcon.png");
+.functionQuestionIcon {
+  background-image: url("functionQuestionIcon.png");
   background-size: 100%;
   width: 593px;
   height: 291px;
+}
+
+
+.classQuestionIcon {
+  background-image: url("classQuestion.png");
+  background-size: 100%;
+  width: 618px;
+  height: 527px;
 }
