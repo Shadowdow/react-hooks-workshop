@@ -1,0 +1,20 @@
+.mountState {
+    background-image: url("mountState.png");
+    background-size: 100%;
+    width: 608px;
+    height: 446px;
+}
+
+.dispatch1 {
+    background-image: url("dispatch1.png");
+    background-size: 100%;
+    width: 355px;
+    height: 158px;
+}
+
+.dispatch2 {
+    background-image: url("dispatch2.png");
+    background-size: 100%;
+    width: 863px;
+    height: 953px;
+}

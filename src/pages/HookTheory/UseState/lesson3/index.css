@@ -1,0 +1,27 @@
+.updateState {
+    background-image: url("updateState.png");
+    background-size: 100%;
+    width: 556px;
+    height: 1328px;
+}
+
+.updateStateDemo {
+    background-image: url("updateStateDemo.png");
+    background-size: 100%;
+    width: 470px;
+    height: 352px;
+}
+
+.updateHook1 {
+    background-image: url("updateHook1.png");
+    background-size: 100%;
+    width: 741px;
+    height: 393px;
+}
+
+.updateHook2 {
+    background-image: url("updateHook2.png");
+    background-size: 100%;
+    width: 652px;
+    height: 447px;
+}

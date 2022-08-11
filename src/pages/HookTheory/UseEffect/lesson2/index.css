@@ -1,7 +1,8 @@
-.useEffectDeps {
-    background-image: url("useEffectDeps.jpg");
-    background-size: 100%;
-    width: 607px;
-    height: 657px;
-}
 
+
+.updateEffect {
+    background-image: url("updateEffect.png");
+    background-size: 100%;
+    width: 495px;
+    height: 443px;
+}

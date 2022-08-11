@@ -38,7 +38,11 @@ const HooksMenu = () => {
     },
     {
       url: "/HookTheory/why-hooks/lesson3",
-      name: "Hooks 怎么保存的？",
+      name: "函数组件初始化阶段",
+    },
+    {
+      url: "/HookTheory/why-hooks/lesson4",
+      name: "函数组件更新阶段",
     },
   ];
 
@@ -46,6 +50,14 @@ const HooksMenu = () => {
     {
       url: "/HookTheory/useState/lesson1",
       name: "what is useState?",
+    },
+    {
+      url: "/HookTheory/useState/lesson2",
+      name: "mountState",
+    },
+    {
+      url: "/HookTheory/useState/lesson3",
+      name: "UpdateState",
     },
     {
       url: "/HookTheory/useState/extraLesson",
@@ -66,10 +78,6 @@ const HooksMenu = () => {
       url: "/HookTheory/useEffect/lesson2",
       name: "更新",
     },
-    // {
-    //   url: "/HookTheory/useEffect/lesson3",
-    //   name: "清理副作用",
-    // },
     {
       url: "/HookTheory/useEffect/practice",
       name: "useEffectPractice",
@@ -105,43 +113,13 @@ const HooksMenu = () => {
   const useRefMenus = [
     {
       url: "/HookTheory/useRef/lesson1",
-      name: "useRef",
+      name: "初始化",
+    },
+    {
+      url: "/HookTheory/useRef/lesson2",
+      name: "更新",
     },
   ];
-
-  // const useReducerMenus = [
-  //   {
-  //     url: "/HookTheory/useReducer/lesson1",
-  //     name: "useReducer",
-  //   },
-  //   {
-  //     url: "/HookTheory/useReducer/practice",
-  //     name: "useReducerPractice",
-  //   },
-  // ];
-
-  // const practiceMenus = [
-  //   {
-  //     url: "/HookTheory/practice/useState",
-  //     name: "useState",
-  //   },
-  //   {
-  //     url: "/HookTheory/practice/useEffect",
-  //     name: "useEffect",
-  //   },
-  //   {
-  //     url: "/HookTheory/practice/useCallback",
-  //     name: "useCallback",
-  //   },
-  //   {
-  //     url: "/HookTheory/practice/useMemo",
-  //     name: "useMemo",
-  //   },
-  //   {
-  //     url: "/HookTheory/practice/useReducer",
-  //     name: "useReducer",
-  //   },
-  // ];
 
   return (
     <>

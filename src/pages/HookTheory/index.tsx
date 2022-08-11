@@ -5,16 +5,9 @@ import WhyHooksLesson1 from "./WhyHooks/lesson1";
 import WhyHooksLesson2 from "./WhyHooks/lesson2";
 import WhyHooksLesson3 from "./WhyHooks/lesson3";
 import UseStateLesson1 from "./UseState/lesson1";
-// import UseStateLesson2 from "./UseState/lesson2";
-// import UseStateLesson3 from "./UseState/lesson3";
-// import UseStatePracticeDemo from "./UseState/lesson4";
 import UseEffectLesson1 from "./UseEffect/lesson1";
 import UseEffectLesson2 from "./UseEffect/lesson2";
-// import UseEffectLesson3 from "./UseEffect/lesson3";
-import UseRefLesson from "./UseRef";
-// import UseReducerLesson from "./UseReducer";
 import UseEffectPractice from "./UseEffect/practice";
-// import UseReducerPractice from "./UseReducer/practice";
 import UseStatePractice from "./Practice/useState/practice";
 import UseCallbackPractice from "./Practice/useCallback/practice";
 import UseMemoPractice from "./Practice/useMemo/practice";
@@ -22,6 +15,11 @@ import ExtraLesson from "./UseState/extraLesson";
 import UseMemoLesson from "./UseMemo/lesson1";
 import UseCallBackLesson from "./UseCallBack";
 import UseMemoLesson2 from "./UseMemo/lessson2";
+import WhyHooksLesson4 from "./WhyHooks/lesson4";
+import UseStateLesson2 from "./UseState/lesson2";
+import UseStateLesson3 from "./UseState/lesson3";
+import UseRefLesson1 from "./UseRef/lesson1";
+import UseRefLesson2 from "./UseRef/lesson2";
 
 const HookTheory = () => {
   return (
@@ -32,15 +30,15 @@ const HookTheory = () => {
           <Route path="why-hooks/lesson1" element={<WhyHooksLesson1 />} />
           <Route path="why-hooks/lesson2" element={<WhyHooksLesson2 />} />
           <Route path="why-hooks/lesson3" element={<WhyHooksLesson3 />} />
+          <Route path="why-hooks/lesson4" element={<WhyHooksLesson4 />} />
 
           <Route path="useState/lesson1" element={<UseStateLesson1 />} />
-          {/*<Route path="useState/lesson2" element={<UseStateLesson2 />} />*/}
-          {/*<Route path="useState/lesson3" element={<UseStateLesson3 />} />*/}
+          <Route path="useState/lesson2" element={<UseStateLesson2 />} />
+          <Route path="useState/lesson3" element={<UseStateLesson3 />} />
           <Route path="useState/lesson4" element={<UseStatePractice />} />
           <Route path="useState/extraLesson" element={<ExtraLesson />} />
           <Route path="useEffect/lesson1" element={<UseEffectLesson1 />} />
           <Route path="useEffect/lesson2" element={<UseEffectLesson2 />} />
-          {/*<Route path="useEffect/lesson3" element={<UseEffectLesson3 />} />*/}
           <Route path="useEffect/practice" element={<UseEffectPractice />} />
           <Route path="useMemo/lesson1" element={<UseMemoLesson />} />
           <Route path="useMemo/lesson2" element={<UseMemoLesson2 />} />
@@ -50,17 +48,8 @@ const HookTheory = () => {
             path="useCallback/practice"
             element={<UseCallbackPractice />}
           />
-          <Route path="useRef/lesson1" element={<UseRefLesson />} />
-          {/*<Route path="useReducer/lesson1" element={<UseReducerLesson />} />*/}
-          {/*<Route path="useReducer/practice" element={<UseReducerPractice />} />*/}
-          {/*<Route path="practice/useState" element={<UseStatePractice />} />*/}
-          {/*<Route path="practice/useEffect" element={<UseEffectPractice />} />*/}
-          {/*<Route*/}
-          {/*  path="practice/useCallback"*/}
-          {/*  element={<UseCallbackPractice />}*/}
-          {/*/>*/}
-          {/*<Route path="practice/useMemo" element={<UseMemoPractice />} />*/}
-          {/*<Route path="practice/useReducer" element={<UseReducerPractice />} />*/}
+          <Route path="useRef/lesson1" element={<UseRefLesson1 />} />
+          <Route path="useRef/lesson2" element={<UseRefLesson2 />} />
         </Routes>
       </div>
     </>

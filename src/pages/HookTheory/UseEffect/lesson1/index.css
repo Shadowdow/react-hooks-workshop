@@ -5,62 +5,30 @@
     height: 645px;
 }
 
-.componentDidMount1 {
-    background-image: url("componentDidMount1.jpg");
+.mountEffect {
+    background-image: url("mountEffect.png");
     background-size: 100%;
-    width: 427px;
-    height: 207px;
+    width: 436px;
+    height: 256px;
 }
 
-.componentDidMount2 {
-    background-image: url("componentDidMount2.jpg");
+.pushEffect {
+    background-image: url("pushEffect.png");
     background-size: 100%;
-    width: 456px;
-    height: 108px;
+    width: 534px;
+    height: 504px;
 }
 
-.shouldComponentUpdate1 {
-    background-image: url("shouldComponentUpdate1.jpg");
+.useEffect3 {
+    background-image: url("useEffect3.png");
     background-size: 100%;
-    width: 453px;
-    height: 284px;
-}
-.shouldComponentUpdate2 {
-    background-image: url("shouldComponentUpdate2.jpg");
-    background-size: 100%;
-    width: 629px;
-    height: 98px;
+    width: 177px;
+    height: 229px;
 }
 
-.componentDidUpdate1 {
-    background-image: url("componentDidUpdate1.jpg");
+.updateQuene {
+    background-image: url("updateQuene.png");
     background-size: 100%;
-    width: 375px;
-    height: 187px;
-}
-.componentDidUpdate2 {
-    background-image: url("componentDidUpdate2.jpg");
-    background-size: 100%;
-    width: 528px;
-    height: 41px;
-}
-
-.componentDidUpdate3 {
-    background-image: url("componentDidUpdate3.jpg");
-    background-size: 100%;
-    width: 359px;
-    height: 212px;
-}
-
-.componentWillUnmount1 {
-    background-image: url("componentWillUnmount1.jpg");
-    background-size: 100%;
-    width: 338px;
-    height: 98px;
-}
-.componentWillUnmount2 {
-    background-image: url("componentWillUnmount2.jpg");
-    background-size: 100%;
-    width: 339px;
-    height: 136px;
+    width: 659px;
+    height: 381px;
 }

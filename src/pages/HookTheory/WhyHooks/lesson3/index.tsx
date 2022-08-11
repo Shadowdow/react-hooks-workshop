@@ -6,7 +6,7 @@ const { Title, Paragraph, Text } = Typography;
 const WhyHooksLesson3: React.FC = () => {
   return (
     <Typography>
-      <Title>Hooks 怎么保存的？</Title>
+      <Title>函数组件初始化</Title>
       <Divider />
       <Paragraph>
         <div className="fourhooks mt-20 mb-20" />
