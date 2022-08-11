@@ -3,7 +3,7 @@ import { Typography, Divider } from "antd";
 // import "./index.css";
 
 const { Title, Paragraph, Text } = Typography;
-const UseContextLesson: React.FC = () => {
+const UseRefLesson: React.FC = () => {
   return (
     <Typography>
       <Title>useContext</Title>
@@ -31,4 +31,4 @@ const UseContextLesson: React.FC = () => {
     </Typography>
   );
 };
-export default UseContextLesson;
+export default UseRefLesson;

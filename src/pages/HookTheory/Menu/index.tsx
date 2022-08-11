@@ -7,10 +7,12 @@ const { SubMenu } = Menu;
 const rootSubmenuKeys = [
   "Why Hooks?",
   "UseState",
+  "UseMemo",
+  "UseCallback",
   "UseEffect",
-  "UseContext",
-  "UseReducer",
-  "Hooks Practice",
+  "UseRef",
+  // "UseReducer",
+  // "Hooks Practice",
 ];
 
 const HooksMenu = () => {
@@ -38,10 +40,6 @@ const HooksMenu = () => {
       url: "/HookTheory/why-hooks/lesson3",
       name: "Hooks 怎么保存的？",
     },
-    {
-      url: "/HookTheory/why-hooks/lesson4",
-      name: "Deps 为什么重要？",
-    },
   ];
 
   const useStateMenus = [
@@ -49,18 +47,10 @@ const HooksMenu = () => {
       url: "/HookTheory/useState/lesson1",
       name: "what is useState?",
     },
-    // {
-    //   url: "/HookTheory/useState/lesson2",
-    //   name: "为什么只能在React函数中调用Hook",
-    // },
     {
       url: "/HookTheory/useState/extraLesson",
       name: "Fiber",
     },
-    // {
-    //   url: "/HookTheory/useState/lesson3",
-    //   name: "为什么只在最顶层使用 Hook",
-    // },
     {
       url: "/HookTheory/useState/lesson4",
       name: "useStatePractice",
@@ -70,62 +60,88 @@ const HooksMenu = () => {
   const useEffectMenus = [
     {
       url: "/HookTheory/useEffect/lesson1",
-      name: "useEffect实现剖析",
+      name: "初始化",
     },
     {
       url: "/HookTheory/useEffect/lesson2",
-      name: "deps参数很重要",
+      name: "更新",
     },
-    {
-      url: "/HookTheory/useEffect/lesson3",
-      name: "清理副作用",
-    },
+    // {
+    //   url: "/HookTheory/useEffect/lesson3",
+    //   name: "清理副作用",
+    // },
     {
       url: "/HookTheory/useEffect/practice",
       name: "useEffectPractice",
     },
   ];
 
-  const useContextMenus = [
+  const useMemoMenus = [
     {
-      url: "/HookTheory/useContext/lesson1",
-      name: "useContext",
+      url: "/HookTheory/useMemo/lesson1",
+      name: "初始化",
+    },
+    {
+      url: "/HookTheory/useMemo/lesson2",
+      name: "更新",
+    },
+    {
+      url: "/HookTheory/useMemo/practice",
+      name: "useMemoPractice",
     },
   ];
 
-  const useReducerMenus = [
+  const useCallbackMenus = [
     {
-      url: "/HookTheory/useReducer/lesson1",
-      name: "useReducer",
-    },
-    {
-      url: "/HookTheory/useReducer/practice",
-      name: "useReducerPractice",
-    },
-  ];
-
-  const practiceMenus = [
-    {
-      url: "/HookTheory/practice/useState",
-      name: "useState",
-    },
-    {
-      url: "/HookTheory/practice/useEffect",
-      name: "useEffect",
-    },
-    {
-      url: "/HookTheory/practice/useCallback",
+      url: "/HookTheory/useCallback/lesson1",
       name: "useCallback",
     },
     {
-      url: "/HookTheory/practice/useMemo",
-      name: "useMemo",
-    },
-    {
-      url: "/HookTheory/practice/useReducer",
-      name: "useReducer",
+      url: "/HookTheory/useCallback/practice",
+      name: "useCallbackPractice",
     },
   ];
+
+  const useRefMenus = [
+    {
+      url: "/HookTheory/useRef/lesson1",
+      name: "useRef",
+    },
+  ];
+
+  // const useReducerMenus = [
+  //   {
+  //     url: "/HookTheory/useReducer/lesson1",
+  //     name: "useReducer",
+  //   },
+  //   {
+  //     url: "/HookTheory/useReducer/practice",
+  //     name: "useReducerPractice",
+  //   },
+  // ];
+
+  // const practiceMenus = [
+  //   {
+  //     url: "/HookTheory/practice/useState",
+  //     name: "useState",
+  //   },
+  //   {
+  //     url: "/HookTheory/practice/useEffect",
+  //     name: "useEffect",
+  //   },
+  //   {
+  //     url: "/HookTheory/practice/useCallback",
+  //     name: "useCallback",
+  //   },
+  //   {
+  //     url: "/HookTheory/practice/useMemo",
+  //     name: "useMemo",
+  //   },
+  //   {
+  //     url: "/HookTheory/practice/useReducer",
+  //     name: "useReducer",
+  //   },
+  // ];
 
   return (
     <>
@@ -157,27 +173,41 @@ const HooksMenu = () => {
             </Menu.Item>
           ))}
         </SubMenu>
-        <SubMenu key="UseContext" title="UseContext">
-          {useContextMenus.map(({ url, name }) => (
+        <SubMenu key="UseMemo" title="UseMemo">
+          {useMemoMenus.map(({ url, name }) => (
             <Menu.Item key={name}>
               <Link to={url}>{name}</Link>
             </Menu.Item>
           ))}
         </SubMenu>
-        <SubMenu key="UseReducer" title="UseReducer">
-          {useReducerMenus.map(({ url, name }) => (
+        <SubMenu key="UseCallback" title="UseCallback">
+          {useCallbackMenus.map(({ url, name }) => (
             <Menu.Item key={name}>
               <Link to={url}>{name}</Link>
             </Menu.Item>
           ))}
         </SubMenu>
-        <SubMenu key="Hooks Practice" title="Hooks Practice">
-          {practiceMenus.map(({ url, name }) => (
+        <SubMenu key="UseRef" title="UseRef">
+          {useRefMenus.map(({ url, name }) => (
             <Menu.Item key={name}>
               <Link to={url}>{name}</Link>
             </Menu.Item>
           ))}
         </SubMenu>
+        {/*<SubMenu key="UseReducer" title="UseReducer">*/}
+        {/*  {useReducerMenus.map(({ url, name }) => (*/}
+        {/*    <Menu.Item key={name}>*/}
+        {/*      <Link to={url}>{name}</Link>*/}
+        {/*    </Menu.Item>*/}
+        {/*  ))}*/}
+        {/*</SubMenu>*/}
+        {/*<SubMenu key="Hooks Practice" title="Hooks Practice">*/}
+        {/*  {practiceMenus.map(({ url, name }) => (*/}
+        {/*    <Menu.Item key={name}>*/}
+        {/*      <Link to={url}>{name}</Link>*/}
+        {/*    </Menu.Item>*/}
+        {/*  ))}*/}
+        {/*</SubMenu>*/}
       </Menu>
     </>
   );

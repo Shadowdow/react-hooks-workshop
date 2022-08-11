@@ -39,29 +39,6 @@ const UseStateLesson1: React.FC = () => {
           </li>
         </ul>
       </Paragraph>
-
-      <Paragraph>
-        <Title level={2}>Hook 两条规则</Title>
-        <Link
-          href="https://react.docschina.org/docs/hooks-rules.html"
-          target="_blank"
-        >
-          React文档
-        </Link>
-        中介绍了 React Hooks 的如下规则
-        <Title level={3}>只在 React 函数中调用 Hook</Title>
-        <Text strong> 不要在普通的 JavaScript 函数中调用 Hook。</Text> 你可以：
-        <ul>
-          <li>✅ 在 React 的函数组件中调用 Hook</li>
-          <li>✅ 在自定义 Hook 中调用其他 Hook</li>
-        </ul>
-        <Title level={3}>只在最顶层使用 Hook</Title>
-        <Text strong>不要在循环，条件或嵌套函数中调用 Hook， </Text>
-         确保总是在你的 React 函数的最顶层调用他们。 遵守这条规则，你就能确保
-        Hook 在每一次渲染中都按照同样的顺序被调用。 这让 React 能够在多次的
-        <Text code>useState</Text> 和 <Text code>useEffect</Text> 调用之间保持
-        hook 状态的正确。
-      </Paragraph>
     </Typography>
   );
 };

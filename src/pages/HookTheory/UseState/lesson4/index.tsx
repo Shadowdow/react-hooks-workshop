@@ -4,7 +4,7 @@ import Demo1 from "./demo1";
 import { Link } from "react-router-dom";
 
 const { Title } = Typography;
-const UseStateLesson4: React.FC = () => {
+const UseStatePracticeDemo: React.FC = () => {
   return (
     <>
       <Typography>
@@ -17,4 +17,4 @@ const UseStateLesson4: React.FC = () => {
     </>
   );
 };
-export default UseStateLesson4;
+export default UseStatePracticeDemo;
