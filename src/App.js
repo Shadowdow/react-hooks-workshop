@@ -14,10 +14,8 @@ function App() {
           <Route path="/HookBestEvent/*" element={<HookBestEvent />} />
           <Route path="/HookTheory/*" element={<HookTheory />} />
           <Route path="/AdvanceTheory" element={<AdvanceTheory />} />
-          {/*<Route path="*" element={<Navigate to="/home" />} />*/}
           <Route path="/" element={<Home />} />
         </Routes>
-        {/*</div>*/}
       </div>
     </BrowserRouter>
   );

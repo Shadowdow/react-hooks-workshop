@@ -20,6 +20,7 @@ import UseStateLesson2 from "./UseState/lesson2";
 import UseStateLesson3 from "./UseState/lesson3";
 import UseRefLesson1 from "./UseRef/lesson1";
 import UseRefLesson2 from "./UseRef/lesson2";
+import Summary from "./Summary";
 
 const HookTheory = () => {
   return (
@@ -50,6 +51,7 @@ const HookTheory = () => {
           />
           <Route path="useRef/lesson1" element={<UseRefLesson1 />} />
           <Route path="useRef/lesson2" element={<UseRefLesson2 />} />
+          <Route path="summary/lesson1" element={<Summary />} />
         </Routes>
       </div>
     </>

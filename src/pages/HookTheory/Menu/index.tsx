@@ -11,8 +11,7 @@ const rootSubmenuKeys = [
   "UseCallback",
   "UseEffect",
   "UseRef",
-  // "UseReducer",
-  // "Hooks Practice",
+  "Summary",
 ];
 
 const HooksMenu = () => {
@@ -121,6 +120,13 @@ const HooksMenu = () => {
     },
   ];
 
+  const summaryMenus = [
+    {
+      url: "/HookTheory/summary/lesson1",
+      name: "总结",
+    },
+  ];
+
   return (
     <>
       <Menu
@@ -172,20 +178,13 @@ const HooksMenu = () => {
             </Menu.Item>
           ))}
         </SubMenu>
-        {/*<SubMenu key="UseReducer" title="UseReducer">*/}
-        {/*  {useReducerMenus.map(({ url, name }) => (*/}
-        {/*    <Menu.Item key={name}>*/}
-        {/*      <Link to={url}>{name}</Link>*/}
-        {/*    </Menu.Item>*/}
-        {/*  ))}*/}
-        {/*</SubMenu>*/}
-        {/*<SubMenu key="Hooks Practice" title="Hooks Practice">*/}
-        {/*  {practiceMenus.map(({ url, name }) => (*/}
-        {/*    <Menu.Item key={name}>*/}
-        {/*      <Link to={url}>{name}</Link>*/}
-        {/*    </Menu.Item>*/}
-        {/*  ))}*/}
-        {/*</SubMenu>*/}
+        <SubMenu key="Summary" title="Summary">
+          {summaryMenus.map(({ url, name }) => (
+            <Menu.Item key={name}>
+              <Link to={url}>{name}</Link>
+            </Menu.Item>
+          ))}
+        </SubMenu>
       </Menu>
     </>
   );
