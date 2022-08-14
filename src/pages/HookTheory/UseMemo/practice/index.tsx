@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback } from "react";
+import React, { useState, useCallback, useMemo } from "react";
 import ReactDOM from "react-dom";
 import { Button } from "antd";
 
@@ -6,25 +6,28 @@ import { Button } from "antd";
 let lastMemo;
 let lastMemoDependencies;
 
-function useMemoDemo(callback, dependencies) {
-  // if (lastMemoDependencies) {
-  //     // 更新时渲染
-  //     // 判断依赖是否改变
-  //     let changed = !dependencies.every((item, index) => item == lastMemoDependencies[index])
-  //     if (changed) {
-  //         lastMemo = callback()
-  //         lastMemoDependencies = dependencies
-  //     }
-  // } else {
-  //     // 初始化
-  //     lastMemo = callback()
-  //     lastMemoDependencies = dependencies
-  // }
-  // return lastMemo
-}
+// function useMemo(callback, dependencies) {
+//   if (lastMemoDependencies) {
+//     // 更新时渲染
+//     // 判断依赖是否改变
+//     let changed = !dependencies.every(
+//       (item, index) => item == lastMemoDependencies[index]
+//     );
+//     if (changed) {
+//       lastMemo = callback();
+//       lastMemoDependencies = dependencies;
+//     }
+//   } else {
+//     // 初始化
+//     lastMemo = callback();
+//     lastMemoDependencies = dependencies;
+//   }
+//   return lastMemo;
+// }
 
 function Child({ data, addClick }) {
   console.log("child---render");
+  console.log("data.num是", data.num);
   return (
     <div>
       <span>{data.num}</span>
@@ -34,7 +37,7 @@ function Child({ data, addClick }) {
 }
 
 function UseMemoPractice() {
-  const [num, setNum] = useState(1);
+  const [num, setNum] = useState(0);
   const [str, setStr] = useState("");
 
   // 用你的自定义useMemo替换

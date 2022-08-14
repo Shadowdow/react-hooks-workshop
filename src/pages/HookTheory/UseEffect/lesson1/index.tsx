@@ -20,11 +20,7 @@ const UseEffectLesson1: React.FC = () => {
       <Paragraph>
         <Title level={3}>pushEffect 创建effect对象，挂载updateQueue</Title>
         <div className="pushEffect my-20" />
-        <Text>
-          这一段实际很简单，首先创建一个 effect
-          ，判断组件如果第一次渲染，那么创建 componentUpdateQueue
-          ，就是workInProgress的updateQueue。然后将effect放入updateQueue中。
-        </Text>
+        <Text>假设我们在一个函数组件中这么写：</Text>
         <div className="useEffect3 my-20" />
         <Text>最后workInProgress.updateQueue会以这样的形式保存：</Text>
         <div className="updateQuene my-20" />

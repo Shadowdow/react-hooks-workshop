@@ -7,9 +7,6 @@ import WhyHooksLesson3 from "./WhyHooks/lesson3";
 import UseStateLesson1 from "./UseState/lesson1";
 import UseEffectLesson1 from "./UseEffect/lesson1";
 import UseEffectLesson2 from "./UseEffect/lesson2";
-import UseEffectPractice from "./UseEffect/practice";
-// import UseCallbackPractice from "./Practice/useCallback/practice";
-import UseMemoPractice from "./Practice/useMemo/practice";
 import ExtraLesson from "./UseState/extraLesson";
 import UseMemoLesson from "./UseMemo/lesson1";
 import UseCallBackLesson from "./UseCallBack";
@@ -21,7 +18,10 @@ import UseRefLesson1 from "./UseRef/lesson1";
 import UseRefLesson2 from "./UseRef/lesson2";
 import Summary from "./Summary";
 import UseStatePracticeDemo from "./UseState/practice";
+import UseEffectPractice from "./UseEffect/practice";
+import UseMemoPractice from "./UseMemo/practice";
 import UseCallbackPractice from "./UseCallBack/practice";
+import UseRefPractice from "./UseRef/practice";
 
 const HookTheory = () => {
   return (
@@ -52,6 +52,7 @@ const HookTheory = () => {
           />
           <Route path="useRef/lesson1" element={<UseRefLesson1 />} />
           <Route path="useRef/lesson2" element={<UseRefLesson2 />} />
+          {/*<Route path="useRef/practice" element={<UseRefPractice />} />*/}
           <Route path="summary/lesson1" element={<Summary />} />
         </Routes>
       </div>

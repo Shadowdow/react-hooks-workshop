@@ -18,6 +18,18 @@ const UseEffectLesson2: React.FC = () => {
         hookEffectTag,然后在commit阶段，react会通过标签来判断，是否执行当前的
         effect 函数。
       </Text>
+
+      <Title level={3}>结构简图</Title>
+      <div className="HookDataConstruct mt-20 mb-20" />
+      <Text>图中黄色为Fiber节点，绿色为Hook节点，蓝色为Effect节点。</Text>
+      <div />
+      <Text>
+        Fiber节点，其实就是我们的虚DOM节点，react会生成一个Fiber节点树，每个组件在Fiber树上都有对应的Fiber节点。
+      </Text>
+      <div />
+      <Text>
+        currentlyRenderingFiber表示我们正在进行渲染的节点，它来自于workInProgress，current表示已经渲染的节点。
+      </Text>
     </Typography>
   );
 };
