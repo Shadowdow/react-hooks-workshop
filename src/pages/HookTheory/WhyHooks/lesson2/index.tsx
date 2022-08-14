@@ -9,15 +9,17 @@ const WhyHooksLesson2: React.FC = () => {
       <Title>Hooks 怎么执行的？</Title>
       <Divider />
       <Paragraph>
-        <Title level={2}>Hooks是从哪来的？</Title>以 useStatus
-        为例：其实hooks都是通过{" "}
+        <Title level={2}>Hooks是从哪来的？</Title>
+        <Text code>{"import { useState } from 'react'"}</Text>
+        <div />以 useStatus 为例：其实hooks都是通过{" "}
         <Text code strong>
           resolveDispatcher(){" "}
         </Text>
         创建的。
-        <div className={"flex my-20"}>
-          <div className="dispatcher mr-20" />
-          <div className="reactCurrentDispatcher" />
+        <div className={"flex flex-col my-20"}>
+          <div className="dispatcher my-8" />
+          <div className="resolveDispatcher my-8" />
+          <div className="reactCurrentDispatcher my-8" />
         </div>
         我们看到
         <Text type={"danger"} code>

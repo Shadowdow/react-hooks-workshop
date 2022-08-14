@@ -30,6 +30,9 @@ const WhyHooksLesson1: React.FC = () => {
           <li>
             <Text strong>在组件之间复用状态逻辑很难</Text>
           </li>
+          <li>
+            <Text strong>复杂组件变得难以理解</Text>
+          </li>
         </ol>
       </Typography>
 

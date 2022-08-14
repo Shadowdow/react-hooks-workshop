@@ -6,6 +6,13 @@
     height: 154px;
 }
 
+.resolveDispatcher{
+    background-image: url("resolveDispatcher.png");
+    background-size: 100%;
+    width: 772px;
+    height: 171px;
+}
+
 .reactCurrentDispatcher{
     background-image: url("ReactCurrentDispatcher.png");
     background-size: 100%;

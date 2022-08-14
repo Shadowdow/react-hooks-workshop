@@ -6,9 +6,10 @@ import { Button } from "antd";
 let lastCallback;
 let lastCallbackDependencies;
 function useCallbackDemo(callback, dependencies) {
+  //  //1.判断是否传入依赖项
   // if (lastCallbackDependencies) {
   //   // 更新时渲染
-  //   // 判断依赖是否改变
+  //   // 3.判断依赖是否改变
   //   let changed = !dependencies.every(
   //     (item, index) => item == lastCallbackDependencies[index]
   //   );
@@ -16,6 +17,7 @@ function useCallbackDemo(callback, dependencies) {
   //     lastCallback = callback;
   //     lastCallbackDependencies = dependencies;
   //   }
+  //2.没有传入依赖项，每次返回最新的useCallback
   // } else {
   //   // 初始化
   //   lastCallback = callback;

@@ -63,7 +63,7 @@ const HooksMenu = () => {
       name: "Fiber",
     },
     {
-      url: "/HookTheory/useState/lesson4",
+      url: "/HookTheory/useState/practice",
       name: "useStatePractice",
     },
   ];
@@ -86,11 +86,11 @@ const HooksMenu = () => {
   const useMemoMenus = [
     {
       url: "/HookTheory/useMemo/lesson1",
-      name: "初始化",
+      name: "useMemo初始化",
     },
     {
       url: "/HookTheory/useMemo/lesson2",
-      name: "更新",
+      name: "useMemo更新",
     },
     {
       url: "/HookTheory/useMemo/practice",
@@ -112,11 +112,11 @@ const HooksMenu = () => {
   const useRefMenus = [
     {
       url: "/HookTheory/useRef/lesson1",
-      name: "初始化",
+      name: "useRef初始化",
     },
     {
       url: "/HookTheory/useRef/lesson2",
-      name: "更新",
+      name: "useRef更新",
     },
   ];
 
