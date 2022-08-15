@@ -1,0 +1,20 @@
+.renderWithHooks {
+    background-image: url("renderWithHooks.png");
+    background-size: 100%;
+    width: 410px;
+    height: 250px;
+}
+
+.mountWork {
+    background-image: url("mountWork.png");
+    background-size: 100%;
+    width: 682px;
+    height: 417px;
+}
+
+.memoizedState2 {
+    background-image: url("memoizedState2.png");
+    background-size: 100%;
+    width: 800px;
+    height: 550px;
+}

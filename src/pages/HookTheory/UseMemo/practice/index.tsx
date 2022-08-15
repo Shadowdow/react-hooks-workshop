@@ -2,17 +2,20 @@ import React, { useState, useCallback, useMemo } from "react";
 import ReactDOM from "react-dom";
 import { Button } from "antd";
 
-// 这里写你自定义的hooks方法
+// 当前的memo值
 let lastMemo;
+// 当前的memo的deps
 let lastMemoDependencies;
 
 // function useMemo(callback, dependencies) {
+//   // 如果 lastMemoDependencies 存在
 //   if (lastMemoDependencies) {
 //     // 更新时渲染
 //     // 判断依赖是否改变
 //     let changed = !dependencies.every(
 //       (item, index) => item == lastMemoDependencies[index]
 //     );
+//     // 如果依赖改变，该怎么办
 //     if (changed) {
 //       lastMemo = callback();
 //       lastMemoDependencies = dependencies;

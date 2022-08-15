@@ -1,44 +1,46 @@
 import React, { useState } from "react";
-// import { createRoot } from "react-dom/client";
 import ReactDOM from "react-dom";
 import { Button } from "antd";
 
-let lastDependencies;
-function useEffect(callback, dependencies) {
-  if (lastDependencies) {
-    let changed = !dependencies.every(
-      (item, index) => item === lastDependencies[index]
-    );
-    if (changed) {
-      callback();
-      lastDependencies = dependencies;
-    }
-  } else {
-    // 首次渲染
+let memoizedState: any[] = []; // hooks 存放在这个数组
+let index = 0; // 当前 memoizedState 下标
+
+function useEffect(callback, depArray) {
+  // 如果 dependencies 不存在
+  const hasNoDeps = !depArray;
+
+  // 判断两次的 dependencies 是否完全相等
+  const deps = memoizedState[index];
+  const hasChangedDeps = deps
+    ? !depArray.every((el, i) => el === deps[i])
+    : true;
+
+  /* 如果 dependencies 不存在，或者 dependencies 有变化*/
+  if (hasNoDeps || hasChangedDeps) {
     callback();
-    lastDependencies = dependencies;
+    memoizedState[index] = depArray;
   }
+  index++;
 }
 
-const UseEffectExample: React.FC = () => {
+const Demo1: React.FC = () => {
   let [num, setNum] = useState(0);
-  let [name, setName] = useState("");
+
   useEffect(() => {
-    console.log("num", num);
+    console.log("现在的num是", num);
   }, [num]);
+
   return (
     <div>
-      <input onChange={(e) => setName(e.target.value)} />
-      <p>{name}</p>
-      <Button onClick={() => setNum(num + 1)}>+</Button>
+      <Button onClick={() => setNum(num + 1)}>Add num</Button>
       <p>{num}</p>
     </div>
   );
 };
 
 function render() {
-  ReactDOM.render(<UseEffectExample />, document.getElementById("root"));
+  ReactDOM.render(<Demo1 />, document.getElementById("root"));
 }
 
 render();
-export default UseEffectExample;
+export default Demo1;

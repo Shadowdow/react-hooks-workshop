@@ -1,26 +1,29 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, memo, useMemo, useCallback } from "react";
 import ReactDOM from "react-dom";
 import { Button } from "antd";
 
+// 这里写你自定义的hooks方法
 let lastCallback;
 let lastCallbackDependencies;
-function useCallback(callback, dependencies) {
-  if (lastCallbackDependencies) {
-    // 更新时渲染
-    // 判断依赖是否改变
-    let changed = !dependencies.every(
-      (item, index) => item == lastCallbackDependencies[index]
-    );
-    if (changed) {
-      lastCallback = callback;
-      lastCallbackDependencies = dependencies;
-    }
-  } else {
-    // 初始化
-    lastCallback = callback;
-    lastCallbackDependencies = dependencies;
-  }
-  return lastCallback;
+function useCallbackDemo(callback, dependencies) {
+  //  //1.判断是否传入依赖项
+  // if (lastCallbackDependencies) {
+  //   // 更新时渲染
+  //   // 3.判断依赖是否改变
+  //   let changed = !dependencies.every(
+  //     (item, index) => item == lastCallbackDependencies[index]
+  //   );
+  //   if (changed) {
+  //     lastCallback = callback;
+  //     lastCallbackDependencies = dependencies;
+  //   }
+  //2.没有传入依赖项，每次返回最新的useCallback
+  // } else {
+  //   // 初始化
+  //   lastCallback = callback;
+  //   lastCallbackDependencies = dependencies;
+  // }
+  // return lastCallback;
 }
 
 function Child({ data, addClick }) {
@@ -33,17 +36,17 @@ function Child({ data, addClick }) {
   );
 }
 
-// Child = memo(Child);
-
-function UseCallbackExample() {
+function UseCallbackPractice() {
   const [num, setNum] = useState(1);
   const [str, setStr] = useState("");
 
   const data = useMemo(() => ({ num }), [num]);
+  // 用你的自定义useCallback替换
   const addClick = useCallback(() => setNum(num + 1), [num]);
 
   return (
     <div>
+      <div>UseCallback练习题</div>
       <input onChange={(e) => setStr(e.target.value)} />
       <p>{str}</p>
       <Child data={data} addClick={addClick} />
@@ -52,8 +55,8 @@ function UseCallbackExample() {
 }
 
 function render() {
-  ReactDOM.render(<UseCallbackExample />, document.getElementById("root"));
+  ReactDOM.render(<UseCallbackPractice />, document.getElementById("root"));
 }
 
 render();
-export default UseCallbackExample;
+export default UseCallbackPractice;
