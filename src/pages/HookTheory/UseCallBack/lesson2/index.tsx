@@ -1,14 +1,15 @@
 import React from "react";
 import { Typography, Divider } from "antd";
-// import "./index.css";
+import "./index.css";
 
 const { Title, Paragraph, Text } = Typography;
-const UseCallBackLesson: React.FC = () => {
+const UseCallBackLesson2: React.FC = () => {
   return (
     <Typography>
-      <Title>useCallback</Title>
+      <Title>updateCallback</Title>
       <Divider />
+      <div className="updateCallback my-20" />
     </Typography>
   );
 };
-export default UseCallBackLesson;
+export default UseCallBackLesson2;

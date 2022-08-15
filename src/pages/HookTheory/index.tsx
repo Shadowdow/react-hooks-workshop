@@ -9,7 +9,7 @@ import UseEffectLesson1 from "./UseEffect/lesson1";
 import UseEffectLesson2 from "./UseEffect/lesson2";
 import ExtraLesson from "./UseState/extraLesson";
 import UseMemoLesson from "./UseMemo/lesson1";
-import UseCallBackLesson from "./UseCallBack";
+import UseCallBackLesson1 from "./UseCallBack/lesson1";
 import UseMemoLesson2 from "./UseMemo/lessson2";
 import WhyHooksLesson4 from "./WhyHooks/lesson4";
 import UseStateLesson2 from "./UseState/lesson2";
@@ -22,6 +22,7 @@ import UseEffectPractice from "./UseEffect/practice";
 import UseMemoPractice from "./UseMemo/practice";
 import UseCallbackPractice from "./UseCallBack/practice";
 import UseRefPractice from "./UseRef/practice";
+import UseCallBackLesson2 from "./UseCallBack/lesson2";
 
 const HookTheory = () => {
   return (
@@ -45,7 +46,8 @@ const HookTheory = () => {
           <Route path="useMemo/lesson1" element={<UseMemoLesson />} />
           <Route path="useMemo/lesson2" element={<UseMemoLesson2 />} />
           <Route path="useMemo/practice" element={<UseMemoPractice />} />
-          <Route path="useCallback/lesson1" element={<UseCallBackLesson />} />
+          <Route path="useCallback/lesson1" element={<UseCallBackLesson1 />} />
+          <Route path="useCallback/lesson2" element={<UseCallBackLesson2 />} />
           <Route
             path="useCallback/practice"
             element={<UseCallbackPractice />}

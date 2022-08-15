@@ -101,7 +101,11 @@ const HooksMenu = () => {
   const useCallbackMenus = [
     {
       url: "/HookTheory/useCallback/lesson1",
-      name: "useCallback",
+      name: "mountCallback",
+    },
+    {
+      url: "/HookTheory/useCallback/lesson2",
+      name: "updateCallback",
     },
     {
       url: "/HookTheory/useCallback/practice",
