@@ -5,3 +5,51 @@
     height: 675px;
 }
 
+.pushEffect {
+    background-image: url("pushEffect.png");
+    background-size: 100%;
+    width: 711px;
+    height: 786px;
+}
+
+.useEffect3 {
+    background-image: url("useEffect3.png");
+    background-size: 100%;
+    width: 177px;
+    height: 229px;
+}
+
+.effectType {
+    background-image: url("effectType.png");
+    background-size: 100%;
+    width: 799px;
+    height: 216px;
+}
+
+.FunctionComponentUpdateQueue {
+    background-image: url("FunctionComponentUpdateQueue.png");
+    background-size: 100%;
+    width: 532px;
+    height: 93px;
+}
+
+.updateQuene {
+    background-image: url("updateQuene.png");
+    background-size: 100%;
+    width: 659px;
+    height: 381px;
+}
+
+.HookDataConstruct {
+    background-image: url("HookDataConstruct.png");
+    background-size: 100%;
+    width: 892px;
+    height: 704px;
+}
+
+.commitHookEffectList {
+    background-image: url("commitHookEffecctList.png");
+    background-size: 100%;
+    width: 1077px;
+    height: 807px;
+}

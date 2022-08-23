@@ -8,27 +8,15 @@
 .mountEffect {
     background-image: url("mountEffect.png");
     background-size: 100%;
-    width: 436px;
-    height: 256px;
+    width: 460px;
+    height: 311px;
 }
 
-.pushEffect {
-    background-image: url("pushEffect.png");
+
+.mountEffectImpl {
+    background-image: url("mountEffectImpl.png");
     background-size: 100%;
-    width: 711px;
-    height: 786px;
+    width: 922px;
+    height: 188px;
 }
 
-.useEffect3 {
-    background-image: url("useEffect3.png");
-    background-size: 100%;
-    width: 177px;
-    height: 229px;
-}
-
-.updateQuene {
-    background-image: url("updateQuene.png");
-    background-size: 100%;
-    width: 659px;
-    height: 381px;
-}

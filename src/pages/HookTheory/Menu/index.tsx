@@ -78,6 +78,10 @@ const HooksMenu = () => {
       name: "更新",
     },
     {
+      url: "/HookTheory/useEffect/lesson3",
+      name: "PushEffect",
+    },
+    {
       url: "/HookTheory/useEffect/practice",
       name: "useEffectPractice",
     },

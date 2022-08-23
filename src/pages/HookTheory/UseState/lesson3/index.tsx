@@ -10,13 +10,19 @@ const UseStateLesson3: React.FC = () => {
     <Typography>
       <Title>UpdateState</Title>
       <Paragraph>
-        <div className="updateState my-20" />
+        <div className={"flex items-center"}>
+          <div className="updateState my-20" />
+          <div className="simpleUpdateState ml-40" />
+        </div>
         这一段看起来很复杂，让我们慢慢吃透，首先将上一次更新的pending queue
         合并到 basequeue，为什么要这么做，比如我们再一次点击事件中这么写，
       </Paragraph>
 
       <Paragraph>
-        <div className="updateStateDemo my-20" />
+        <div className={"flex items-center"}>
+          <div className="updateStateDemo my-20" />
+          <div className="HookQueue ml-40" />
+        </div>
         <UpdateStateDemo />
         <Title level={4}>点击按钮， 打印 3</Title>
         三次setNumber产生的update会暂且放入pending

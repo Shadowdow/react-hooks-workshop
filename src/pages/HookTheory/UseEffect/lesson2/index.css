@@ -3,13 +3,13 @@
 .updateEffect {
     background-image: url("updateEffect.png");
     background-size: 100%;
-    width: 669px;
-    height: 458px;
+    width: 430px;
+    height: 322px;
 }
 
-.HookDataConstruct {
-    background-image: url("HookDataConstruct.png");
+.updateEffectImpl {
+    background-image: url("updateEffectImpl.png");
     background-size: 100%;
-    width: 892px;
-    height: 704px;
+    width: 913px;
+    height: 592px;
 }

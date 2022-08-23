@@ -16,16 +16,7 @@ const UseEffectLesson1: React.FC = () => {
           每个hooks初始化都会创建一个hook对象，然后将hook的memoizedState保存当前effect
           hook信息。
         </Text>
-      </Paragraph>
-      <Paragraph>
-        <Title level={3}>pushEffect 创建effect对象，挂载updateQueue</Title>
-        <div className="pushEffect my-20" />
-        <Text>假设我们在一个函数组件中这么写：</Text>
-        <div className="useEffect3 my-20" />
-        <Text>最后workInProgress.updateQueue会以这样的形式保存：</Text>
-        <div className="updateQuene my-20" />
-
-        <Text type={"danger"}>EffectList</Text>
+        <div className="mountEffectImpl my-20" />
       </Paragraph>
     </Typography>
   );

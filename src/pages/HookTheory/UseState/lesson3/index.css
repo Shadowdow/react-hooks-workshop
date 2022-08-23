@@ -25,3 +25,17 @@
     width: 652px;
     height: 447px;
 }
+
+.simpleUpdateState {
+    background-image: url("simpleUpdateState.png");
+    background-size: 100%;
+    width: 558px;
+    height: 189px;
+}
+
+.HookQueue {
+    background-image: url("HookQueue.png");
+    background-size: 100%;
+    width: 284px;
+    height: 528px;
+}

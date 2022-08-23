@@ -20,9 +20,6 @@ const UseStateLesson2: React.FC = () => {
           queue,我们传入的参数是第三个参数action
         </div>
         <div className="dispatch1 my-20" />
-        dispatchAction 就是 setNumber , dispatchAction
-        第一个参数和第二个参数，已经被bind给改成currentlyRenderingFiber和
-        queue,我们传入的参数是第三个参数action
       </Paragraph>
 
       <Paragraph>
