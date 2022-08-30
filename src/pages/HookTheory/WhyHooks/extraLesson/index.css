@@ -27,3 +27,17 @@
     width: 869px;
     height: 475px;
 }
+
+.workInProgress {
+    background-image: url("workInProgress.png");
+    background-size: 100%;
+    width: 716px;
+    height: 890px;
+}
+
+.tree {
+    background-image: url("tree.gif");
+    background-size: 100%;
+    width: 716px;
+    height: 898px;
+}

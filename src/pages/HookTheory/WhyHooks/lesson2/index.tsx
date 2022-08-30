@@ -70,7 +70,7 @@ const WhyHooksLesson2: React.FC = () => {
         ，都是ContextOnlyDispatcher对象上生成hooks。
         <div />
         通过这种函数组件执行赋值不同的hooks对象方式，判断在hooks执行是否在函数组件内部，捕获并抛出异常的。
-        <div className="contextOnlyDispatcher" />
+        <div className="contextOnlyDispatcher my-20" />
       </Paragraph>
     </Typography>
   );

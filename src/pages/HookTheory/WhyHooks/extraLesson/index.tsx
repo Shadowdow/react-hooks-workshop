@@ -7,10 +7,27 @@ const { Title, Paragraph, Text } = Typography;
 const ExtraLesson: React.FC = () => {
   return (
     <Typography>
-      <Title>Fiber</Title>
+      <Title> React Render & Fiber</Title>
       <Divider />
       <Paragraph>
-        <Title level={2}>什么是Fiber</Title>
+        <Title level={3}>双缓存</Title>
+        <div className="workInProgress mt-20 mb-20" />
+        <div className="tree mt-20 mb-20" />
+        <div />在 <Text code>React</Text> 中最多会同时存在两棵{" "}
+        <Text code>Fiber树 </Text>
+        。当前屏幕上显示内容对应的 <Text code>Fiber树</Text>称为{" "}
+        <Text code>current Fiber树</Text>
+        ，正在内存中构建的 <Text code>Fiber树</Text>称为{" "}
+        <Text code>workInProgress Fiber树</Text>。
+        <div />
+        <Text code>current Fiber树</Text>中的Fiber节点被称为{" "}
+        <Text code>current fiber</Text>，{" "}
+        <Text code>workInProgress Fiber树</Text>中的Fiber节点被称为{" "}
+        <Text code>workInProgress fiber</Text>，他们通过{" "}
+        <Text code>alternate</Text>属性连接。
+      </Paragraph>
+      <Paragraph>
+        <Title level={3}>什么是Fiber</Title>
         <ul>
           <li>
             含义：

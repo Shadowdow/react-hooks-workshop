@@ -32,6 +32,10 @@ const HooksMenu = () => {
       name: "什么是 Hooks ",
     },
     {
+      url: "/HookTheory/why-hooks/extraLesson",
+      name: "React Render & Fiber",
+    },
+    {
       url: "/HookTheory/why-hooks/lesson2",
       name: "Hooks 是从哪来的？",
     },
@@ -57,10 +61,6 @@ const HooksMenu = () => {
     {
       url: "/HookTheory/useState/lesson3",
       name: "UpdateState",
-    },
-    {
-      url: "/HookTheory/useState/extraLesson",
-      name: "Fiber",
     },
     {
       url: "/HookTheory/useState/practice",

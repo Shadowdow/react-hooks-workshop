@@ -7,7 +7,7 @@ import WhyHooksLesson3 from "./WhyHooks/lesson3";
 import UseStateLesson1 from "./UseState/lesson1";
 import UseEffectLesson1 from "./UseEffect/lesson1";
 import UseEffectLesson2 from "./UseEffect/lesson2";
-import ExtraLesson from "./UseState/extraLesson";
+import ExtraLesson from "./WhyHooks/extraLesson";
 import UseMemoLesson from "./UseMemo/lesson1";
 import UseCallBackLesson1 from "./UseCallBack/lesson1";
 import UseMemoLesson2 from "./UseMemo/lessson2";
@@ -32,6 +32,7 @@ const HookTheory = () => {
       <div className="p-32 flex-1 ml-40">
         <Routes>
           <Route path="why-hooks/lesson1" element={<WhyHooksLesson1 />} />
+          <Route path="why-hooks/extraLesson" element={<ExtraLesson />} />
           <Route path="why-hooks/lesson2" element={<WhyHooksLesson2 />} />
           <Route path="why-hooks/lesson3" element={<WhyHooksLesson3 />} />
           <Route path="why-hooks/lesson4" element={<WhyHooksLesson4 />} />
@@ -40,7 +41,6 @@ const HookTheory = () => {
           <Route path="useState/lesson2" element={<UseStateLesson2 />} />
           <Route path="useState/lesson3" element={<UseStateLesson3 />} />
           <Route path="useState/practice" element={<UseStatePracticeDemo />} />
-          <Route path="useState/extraLesson" element={<ExtraLesson />} />
           <Route path="useEffect/lesson1" element={<UseEffectLesson1 />} />
           <Route path="useEffect/lesson2" element={<UseEffectLesson2 />} />
           <Route path="useEffect/lesson3" element={<UseEffectLesson3 />} />
