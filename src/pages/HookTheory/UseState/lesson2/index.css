@@ -18,3 +18,17 @@
     width: 863px;
     height: 953px;
 }
+
+.HookQueue {
+    background-image: url("HookQueue.png");
+    background-size: 100%;
+    width: 209px;
+    height: 464px;
+}
+
+.Update {
+    background-image: url("Update.png");
+    background-size: 100%;
+    width: 304px;
+    height: 410px;
+}

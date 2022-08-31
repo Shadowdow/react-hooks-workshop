@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 
 import { Button } from "antd";
@@ -9,21 +9,32 @@ let index = 0;
 function myUseState(initialState) {
   let curIndex = index;
   // 1.判断initialState是否是函数
-
+  if (typeof initialState === "function") {
+    initialState = initialState();
+  }
   //2.判断初值
+  lastStates[curIndex] =
+    lastStates[curIndex] === undefined ? initialState : lastStates[curIndex];
 
   //3.setState方法
   const setState = (newState) => {
     // 4.判断initialState是否是函数
+    if (typeof newState === "function") {
+      newState = newState(lastStates[curIndex]);
+    }
     // 5.判断newState和initialState是否相同
-    //6.更新newState
-  };
+    if (Object.is(lastStates[curIndex], newState)) return;
 
-  return;
+    //6.更新newState
+    lastStates[curIndex] = newState;
+    render();
+  };
+  index += 1;
+  return [lastStates[curIndex], setState];
 }
 
 const Demo1: React.FC = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = myUseState(0);
   // let [count2, setCount2] = useState(10);
   console.log("count", count);
   return (

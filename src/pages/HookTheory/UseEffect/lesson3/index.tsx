@@ -56,6 +56,7 @@ const UseEffectLesson3: React.FC = () => {
         <div className="useEffect3 my-20" />
         <Text>最后workInProgress.updateQueue会以这样的形式保存：</Text>
         <div className="updateQuene my-20" />
+        <div className="commitHookEffectList my-20" />
       </Paragraph>
       <Paragraph>
         <div />
@@ -75,8 +76,6 @@ const UseEffectLesson3: React.FC = () => {
           <li>组件更新</li>
           <li>组件渲染</li>
         </ol>
-
-        <div className="commitHookEffectList mt-20 mb-20" />
       </Paragraph>
     </Typography>
   );
