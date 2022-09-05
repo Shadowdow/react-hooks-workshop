@@ -14,19 +14,15 @@ const UseStateLesson2: React.FC = () => {
 
       <Paragraph>
         <Text strong>先要弄明白dispatchAction是什么?</Text>
-        <div>
-          dispatchAction 就是 setNumber , dispatchAction
-          第一个参数和第二个参数，已经被bind给改成currentlyRenderingFiber和
-          queue,我们传入的参数是第三个参数action
+        <div className={"flex items-center my-20"}>
+          <div className="action " />
+          <div className="updateLink ml-40 " />
         </div>
-        <div className="dispatch1 my-20" />
       </Paragraph>
 
       <Paragraph>
         <div className={"flex items-center my-40"}>
           <div className="dispatch2 my-20" />
-          <div className="Update ml-40" />
-          <div className="HookQueue ml-40" />
         </div>
         无论是类组件调用setState,还是函数组件的dispatchAction ，都会产生一个
         update对象，里面记录了此次更新的信息，然后将此update放入待更新的pending队列中。

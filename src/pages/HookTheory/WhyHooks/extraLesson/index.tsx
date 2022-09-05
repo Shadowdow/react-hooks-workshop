@@ -8,23 +8,12 @@ const ExtraLesson: React.FC = () => {
   return (
     <Typography>
       <Title> React Render & Fiber</Title>
+      <div className="doubleTree mt-20 mb-20" />
+      <div className="doubleStep mt-20 mb-20" />
+
       <Divider />
       <Paragraph>
         <Title level={3}>双缓存</Title>
-        <div className="workInProgress mt-20 mb-20" />
-        <div className="tree mt-20 mb-20" />
-        <div />在 <Text code>React</Text> 中最多会同时存在两棵{" "}
-        <Text code>Fiber树 </Text>
-        。当前屏幕上显示内容对应的 <Text code>Fiber树</Text>称为{" "}
-        <Text code>current Fiber树</Text>
-        ，正在内存中构建的 <Text code>Fiber树</Text>称为{" "}
-        <Text code>workInProgress Fiber树</Text>。
-        <div />
-        <Text code>current Fiber树</Text>中的Fiber节点被称为{" "}
-        <Text code>current fiber</Text>，{" "}
-        <Text code>workInProgress Fiber树</Text>中的Fiber节点被称为{" "}
-        <Text code>workInProgress fiber</Text>，他们通过{" "}
-        <Text code>alternate</Text>属性连接。
       </Paragraph>
       <Paragraph>
         <Title level={3}>什么是Fiber</Title>
@@ -63,9 +52,6 @@ const ExtraLesson: React.FC = () => {
         Fiber 继续遍历下去。如下图所示：
         <div className="helloWorld mt-20 mb-20" />
         <div className="fiber-flow mt-20 mb-20" />
-        <div className="fiber-link mt-20 mb-20" />
-        比如: 你在 text(hello) 中断了，那么下一次就会从 p 节点开始处理
-        这个数据结构调整还有一个好处，就是某些节点异常时，我们可以打印出完整的’节点栈‘，只需要沿着节点的return回溯即可。
       </Paragraph>
     </Typography>
   );

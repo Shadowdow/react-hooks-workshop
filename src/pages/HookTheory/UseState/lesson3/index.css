@@ -1,8 +1,15 @@
 .updateState {
     background-image: url("updateState.png");
     background-size: 100%;
-    width: 556px;
-    height: 1328px;
+    width: 679px;
+    height: 1386px;
+}
+
+.updateStateSimple {
+    background-image: url("updateStateSimple.png");
+    background-size: 100%;
+    width: 660px;
+    height: 652px;
 }
 
 .updateStateDemo {

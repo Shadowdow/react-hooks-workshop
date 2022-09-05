@@ -10,23 +10,7 @@ const WhyHooksLesson2: React.FC = () => {
       <Divider />
       <Paragraph>
         <Title level={2}>Hooks是从哪来的？</Title>
-        <Text code>{"import { useState } from 'react'"}</Text>
-        <div />以 useStatus 为例：其实hooks都是通过{" "}
-        <Text code strong>
-          resolveDispatcher(){" "}
-        </Text>
-        创建的。
-        <div className={"flex flex-col my-20"}>
-          <div className="dispatcher my-8" />
-          <div className="resolveDispatcher my-8" />
-          <div className="reactCurrentDispatcher my-8" />
-        </div>
-        我们看到
-        <Text type={"danger"} code>
-          {" "}
-          ReactCurrentDispatcher.current
-        </Text>
-        初始化的时候为null，然后就没任何下文了。
+        <div className="useStateDispatcher my-20" />
       </Paragraph>
 
       <Paragraph>
@@ -42,7 +26,33 @@ const WhyHooksLesson2: React.FC = () => {
       </Paragraph>
 
       <Paragraph>
-        <div className="renderWithHooks2" />
+        <div className="renderWithHooksFaker my-20" />
+        <div className="dispatch my-20" />
+        <Title level={4}>小结</Title>
+        <div className="hooksFiber my-20" />
+        hooks 对象本质上是主要以三种处理策略存在 React 中：
+        <ol>
+          <li>
+            <Text type={"danger"}>ContextOnlyDispatcher</Text>:{" "}
+            防止开发者在函数组件外部调用 hooks ，所以第一种就是{" "}
+            <Text strong>报错形态</Text>，只要开发者调用了这个形态下的 hooks
+            ，就会抛出异常。
+          </li>
+          <li>
+            <Text type={"danger"}>HooksDispatcherOnMount</Text>: 函数组件{" "}
+            <Text strong>初始化 mount</Text> ，hooks 是函数组件和对应 fiber
+            桥梁，这个时候的 hooks 作用就是建立这个桥梁，初次建立其 hooks 与
+            fiber 之间的关系。
+          </li>
+          <li>
+            <Text type={"danger"}>HooksDispatcherOnUpdate</Text>: 函数组件{" "}
+            <Text strong>更新 update</Text>，既然与 fiber
+            之间的桥已经建好了，那么组件再更新，就需要 hooks
+            去获取或者更新维护状态。
+          </li>
+        </ol>
+        <Divider className={"mb-40"} />
+        <div className="renderWithHooks2 " />
         <Title level={4}>执行步骤</Title>
         <ol>
           <li>

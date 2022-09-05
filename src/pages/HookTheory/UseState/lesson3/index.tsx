@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "antd";
+import { Divider, Typography } from "antd";
 import "./index.css";
 import UpdateStateDemo from "./demo";
 
@@ -11,13 +11,12 @@ const UseStateLesson3: React.FC = () => {
       <Title>UpdateState</Title>
       <Paragraph>
         <div className={"flex items-center"}>
-          <div className="updateState my-20" />
-          <div className="simpleUpdateState ml-40" />
+          <div className="updateStateSimple my-20" />
+          {/*<div className="simpleUpdateState ml-40" />*/}
         </div>
         这一段看起来很复杂，让我们慢慢吃透，首先将上一次更新的pending queue
         合并到 basequeue，为什么要这么做，比如我们再一次点击事件中这么写，
       </Paragraph>
-
       <Paragraph>
         <div className={"flex items-center"}>
           <div className="updateStateDemo my-20" />
@@ -45,6 +44,9 @@ const UseStateLesson3: React.FC = () => {
         答案：
         这种情况，一般会发生在，当我们调用setNumber时候，调用scheduleUpdateOnFiber渲染当前组件时，又产生了一次新的更新，所以把最终执行reducer更新state任务交给下一次更新。
       </Paragraph>
+      <Divider className={"mt-40"} />
+      源码
+      <div className="updateState my-20" />
     </Typography>
   );
 };

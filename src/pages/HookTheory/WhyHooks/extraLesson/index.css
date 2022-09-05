@@ -7,12 +7,6 @@
     height: 208px;
 }
 
-.fiber-link {
-    background-image: url("fiber-link.jpg");
-    background-size: 100%;
-    width: 1731px;
-    height: 720px;
-}
 
 .fiber-flow {
     background-image: url("fiber-flow.jpg");
@@ -28,16 +22,15 @@
     height: 475px;
 }
 
-.workInProgress {
-    background-image: url("workInProgress.png");
+.doubleStep {
+    background-image: url("doubleStep.jpg");
     background-size: 100%;
-    width: 716px;
-    height: 890px;
+    width: 801px;
+    height: 501px;
 }
-
-.tree {
-    background-image: url("tree.gif");
+.doubleTree {
+    background-image: url("doubleTree.jpg");
     background-size: 100%;
-    width: 716px;
-    height: 898px;
+    width: 754px;
+    height: 547px;
 }

@@ -33,3 +33,10 @@
     width: 682px;
     height: 417px;
 }
+
+.hooksLink {
+    background-image: url("hooksLink.png");
+    background-size: 100%;
+    width: 556px;
+    height: 355px;
+}

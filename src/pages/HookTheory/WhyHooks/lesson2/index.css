@@ -1,24 +1,24 @@
-
-.dispatcher{
-    background-image: url("dispatcher.png");
+.useStateDispatcher{
+    background-image: url("useStateDispatcher.png");
     background-size: 100%;
-    width: 691px;
-    height: 154px;
+    width: 515px;
+    height: 162px;
 }
 
-.resolveDispatcher{
-    background-image: url("resolveDispatcher.png");
+.dispatch{
+    background-image: url("dispatch.png");
     background-size: 100%;
-    width: 772px;
-    height: 171px;
+    width: 550px;
+    height: 394px;
 }
 
-.reactCurrentDispatcher{
-    background-image: url("ReactCurrentDispatcher.png");
+.renderWithHooksFaker {
+    background-image: url("renderWithHooksFaker.png");
     background-size: 100%;
-    width: 538px;
-    height: 111px;
+    width: 518px;
+    height: 567px;
 }
+
 
 .renderWithHooks2 {
     background-image: url("renderwithhooks2.png");
@@ -32,4 +32,11 @@
     background-size: 100%;
     width: 1024px;
     height: 708px;
+}
+
+.hooksFiber {
+    background-image: url("hooksFiber.png");
+    background-size: 100%;
+    width: 727px;
+    height: 188px;
 }

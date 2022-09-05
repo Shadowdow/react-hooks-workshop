@@ -5,11 +5,11 @@
     height: 446px;
 }
 
-.dispatch1 {
-    background-image: url("dispatch1.png");
+.action {
+    background-image: url("action.png");
     background-size: 100%;
-    width: 355px;
-    height: 158px;
+    width: 618px;
+    height: 398px;
 }
 
 .dispatch2 {
@@ -19,16 +19,11 @@
     height: 953px;
 }
 
-.HookQueue {
-    background-image: url("HookQueue.png");
+.updateLink {
+    background-image: url("updateLink.png");
     background-size: 100%;
-    width: 209px;
-    height: 464px;
-}
-
-.Update {
-    background-image: url("Update.png");
-    background-size: 100%;
-    width: 304px;
-    height: 410px;
+    /*width: 1555px;*/
+    /*height: 912px;*/
+    width: 1000px;
+    height: 580px;
 }
