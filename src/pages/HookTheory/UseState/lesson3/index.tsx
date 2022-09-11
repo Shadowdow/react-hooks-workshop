@@ -44,7 +44,7 @@ const UseStateLesson3: React.FC = () => {
         答案：
         这种情况，一般会发生在，当我们调用setNumber时候，调用scheduleUpdateOnFiber渲染当前组件时，又产生了一次新的更新，所以把最终执行reducer更新state任务交给下一次更新。
       </Paragraph>
-      <Divider className={"mt-40"} />
+      <Divider className={"mt-40 bg-black"} />
       源码
       <div className="updateState my-20" />
     </Typography>

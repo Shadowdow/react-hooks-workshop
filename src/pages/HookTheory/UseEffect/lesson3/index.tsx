@@ -10,7 +10,10 @@ const UseEffectLesson3: React.FC = () => {
       <Title>PushEffect</Title>
       <Paragraph>
         <Title level={3}>创建effect对象，挂载updateQueue</Title>
-        <div className="pushEffect my-20" />
+        <div className={"flex items-center my-20"}>
+          <div className="pushEffect " />
+          <div className="pushEffectSimple ml-40" />
+        </div>
         <Text>
           首先根据入参声明了一个新的 effect，由数据结构能看出，它是一个循环链表
         </Text>

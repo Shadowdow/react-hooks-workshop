@@ -5,11 +5,11 @@
     height: 446px;
 }
 
-.action {
-    background-image: url("action.png");
+.dispatchSimple {
+    background-image: url("dispatchSimple.png");
     background-size: 100%;
-    width: 618px;
-    height: 398px;
+    width: 508px;
+    height: 556px;
 }
 
 .dispatch2 {

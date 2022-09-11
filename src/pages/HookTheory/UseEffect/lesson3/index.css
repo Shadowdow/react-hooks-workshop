@@ -53,3 +53,10 @@
     width: 1077px;
     height: 807px;
 }
+
+.pushEffectSimple {
+    background-image: url("pushEffectSimple.png");
+    background-size: 100%;
+    width: 520px;
+    height: 378px;
+}

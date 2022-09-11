@@ -18,3 +18,10 @@
     width: 754px;
     height: 547px;
 }
+
+.updateHookSimple {
+    background-image: url("updateHookSimple.png");
+    background-size: 100%;
+    width: 429px;
+    height: 350px;
+}

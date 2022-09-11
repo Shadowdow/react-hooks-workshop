@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "antd";
+import { Divider, Typography } from "antd";
 import "./index.css";
 
 const { Title, Paragraph, Text, Link } = Typography;
@@ -15,12 +15,13 @@ const UseStateLesson2: React.FC = () => {
       <Paragraph>
         <Text strong>先要弄明白dispatchAction是什么?</Text>
         <div className={"flex items-center my-20"}>
-          <div className="action " />
+          <div className="dispatchSimple " />
           <div className="updateLink ml-40 " />
         </div>
       </Paragraph>
 
       <Paragraph>
+        <Divider className={"bg-black"} />
         <div className={"flex items-center my-40"}>
           <div className="dispatch2 my-20" />
         </div>

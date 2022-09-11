@@ -8,8 +8,8 @@
 .updateStateSimple {
     background-image: url("updateStateSimple.png");
     background-size: 100%;
-    width: 660px;
-    height: 652px;
+    width: 456px;
+    height: 429px;
 }
 
 .updateStateDemo {
@@ -41,10 +41,10 @@
 }
 
 .HookQueue {
-    background-image: url("HookQueue.png");
+    background-image: url("queueLink.png");
     background-size: 100%;
-    width: 209px;
-    height: 464px;
+    width: 269px;
+    height: 286px;
 }
 
 .Update {
