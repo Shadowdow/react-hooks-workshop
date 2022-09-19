@@ -33,16 +33,30 @@ const UseStateLesson3: React.FC = () => {
         expirationTime，对于有足够优先级的update（上述三个setNumber产生的update都具有足够的优先级），我们要获取最新的state状态。，会一次执行useState上的每一个action。得到最新的state。
         <Title level={4}>更新state</Title>
         <div className="updateHook2 my-20" />
-        这里有会有两个疑问🤔️: 问题一：这里不是执行最后一个action不就可以了嘛?
-        答案： 原因很简单，上面说了
-        useState逻辑和useReducer差不多。如果第一个参数是一个函数，会引用上一次
-        update产生的 state, 所以需要循环调用，
-        每一个update的reducer，如果setNumber(2)是这种情况，那么只用更新值，如果是
-        <Text code>{`setNumber(state=>state+1)`}</Text> ,那么传入上一次的 state
-        得到最新state。 问题二：什么情况下会有优先级不足的情况(
+        这里有会有两个疑问🤔️:
+        <div />
+        问题一：这里不是执行最后一个action不就可以了嘛?
+        <div className={"question"}>
+          {" "}
+          答案：{" "}
+          <div className={"inVisible"}>
+            原因很简单，上面说了
+            useState逻辑和useReducer差不多。如果第一个参数是一个函数，会引用上一次
+            update产生的 state, 所以需要循环调用，
+            每一个update的reducer，如果setNumber(2)是这种情况，那么只用更新值，如果是
+            <Text code>{`setNumber(state=>state+1)`}</Text> ,那么传入上一次的
+            state 得到最新state。
+          </div>
+        </div>
+        问题二：什么情况下会有优先级不足的情况(
         <Text code>{`updateExpirationTime < renderExpirationTime `}</Text>)？
-        答案：
-        这种情况，一般会发生在，当我们调用setNumber时候，调用scheduleUpdateOnFiber渲染当前组件时，又产生了一次新的更新，所以把最终执行reducer更新state任务交给下一次更新。
+        <div className={"question"}>
+          {" "}
+          答案：{" "}
+          <div className={"inVisible"}>
+            这种情况，一般会发生在，当我们调用setNumber时候，调用scheduleUpdateOnFiber渲染当前组件时，又产生了一次新的更新，所以把最终执行reducer更新state任务交给下一次更新。
+          </div>
+        </div>
       </Paragraph>
       <Divider className={"mt-40 bg-black"} />
       源码

@@ -29,7 +29,6 @@ const WhyHooksLesson2: React.FC = () => {
         <div className="renderWithHooksFaker my-20" />
         <div className="dispatch my-20" />
         <Title level={4}>小结</Title>
-        <div className="hooksFiber my-20" />
         hooks 对象本质上是主要以三种处理策略存在 React 中：
         <ol>
           <li>
@@ -51,7 +50,7 @@ const WhyHooksLesson2: React.FC = () => {
             去获取或者更新维护状态。
           </li>
         </ol>
-        <Divider className={"mb-40"} />
+        <Divider className={"bg-black"} />
         <div className="renderWithHooks2 " />
         <Title level={4}>执行步骤</Title>
         <ol>

@@ -34,3 +34,10 @@
     width: 754px;
     height: 547px;
 }
+
+.twoPhase {
+    background-image: url("twoPhase.png");
+    background-size: 100%;
+    width: 792px;
+    height: 516px;
+}

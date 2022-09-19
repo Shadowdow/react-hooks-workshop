@@ -9,9 +9,12 @@ const ExtraLesson: React.FC = () => {
     <Typography>
       <Title> React Render & Fiber</Title>
       <div className="doubleTree mt-20 mb-20" />
-      <div className="doubleStep mt-20 mb-20" />
+      <div className={"flex my-20 items-center"}>
+        <div className="doubleStep " />
+        <div className="twoPhase ml-40" />
+      </div>
 
-      <Divider />
+      <Divider className={"bg-black"} />
       <Paragraph>
         <Title level={3}>双缓存</Title>
       </Paragraph>

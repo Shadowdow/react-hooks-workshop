@@ -53,3 +53,13 @@
     width: 304px;
     height: 410px;
 }
+
+.inVisible{
+    display: none;
+
+}
+
+
+.question:hover .inVisible{
+    display: block;
+}

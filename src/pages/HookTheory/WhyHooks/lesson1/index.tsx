@@ -25,13 +25,23 @@ const WhyHooksLesson1: React.FC = () => {
         <Title level={3}>Hook 解决了什么问题</Title>
         <ol>
           <li>
-            <Text strong>难以理解的 class。</Text>
+            <Text strong className={"mr-16"}>
+              难以理解的 class
+            </Text>
+            {`->`} 大型组件很难拆分和重构，也很难测试{" "}
           </li>
           <li>
-            <Text strong>在组件之间复用状态逻辑很难</Text>
+            <Text strong className={"mr-16"}>
+              在组件之间复用状态逻辑很难
+            </Text>
+            {`->`}
+            业务逻辑分散在组件的各个方法之中，导致重复逻辑或关联逻辑{" "}
           </li>
           <li>
-            <Text strong>复杂组件变得难以理解</Text>
+            <Text strong className={"mr-16"}>
+              复杂组件变得难以理解
+            </Text>
+            {`->`} 组件类引入了复杂的编程模式，比如 render props 和高阶组件{" "}
           </li>
         </ol>
       </Typography>
