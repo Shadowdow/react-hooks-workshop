@@ -41,11 +41,11 @@ const HooksMenu = () => {
     },
     {
       url: "/HookTheory/why-hooks/lesson3",
-      name: "函数组件初始化阶段",
+      name: "初始化阶段",
     },
     {
       url: "/HookTheory/why-hooks/lesson4",
-      name: "函数组件更新阶段",
+      name: "更新阶段",
     },
   ];
 

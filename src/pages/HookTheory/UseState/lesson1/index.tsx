@@ -9,13 +9,8 @@ const UseStateLesson1: React.FC = () => {
     <Typography>
       <Title>UseState</Title>
       <Paragraph>
-        <Text code>
-          {"function useState<S>(initialState: (() => S) | S,): [S, Dispatch<BasicStateAction<S>>] {\n" +
-            "  const dispatcher = resolveDispatcher();\n" +
-            "  return dispatcher.useState(initialState);\n" +
-            "}"}
-        </Text>
-        <div className="useState1 mt-20" />
+        <div className="useStateDispatcher mt-20" />
+        <div className="useState1 mt-40" />
       </Paragraph>
       <Paragraph>
         作用：返回一个状态以及能修改这个状态的 setter

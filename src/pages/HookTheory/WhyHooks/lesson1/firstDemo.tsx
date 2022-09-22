@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "antd";
 
 const FirstDemo: React.FC = () => {
@@ -7,7 +7,9 @@ const FirstDemo: React.FC = () => {
 
   return (
     <div className={"ml-16"}>
-      <p>You clicked {count} times</p>
+      <p>
+        You clicked <span className={"text-20 text-black"}>{count}</span> times
+      </p>
       <Button onClick={() => setCount(count + 1)}>Click me</Button>
     </div>
   );

@@ -8,8 +8,8 @@
 .dispatchSimple {
     background-image: url("dispatchSimple.png");
     background-size: 100%;
-    width: 508px;
-    height: 556px;
+    width: 707px;
+    height: 797px;
 }
 
 .dispatch2 {
@@ -26,4 +26,12 @@
     /*height: 912px;*/
     width: 1000px;
     height: 580px;
+}
+
+
+.scheduleUpdateOnFiber {
+    background-image: url("scheduleUpdateOnFiber.png");
+    background-size: 100%;
+    width: 1181px;
+    height: 1396px;
 }

@@ -10,7 +10,10 @@ const WhyHooksLesson2: React.FC = () => {
       <Divider />
       <Paragraph>
         <Title level={2}>Hooks是从哪来的？</Title>
-        <div className="useStateDispatcher my-20" />
+        <div className={"flex my-20 items-center"}>
+          <div className="useStateDispatcher " />
+          <div className="dispatch ml-40" />
+        </div>
       </Paragraph>
 
       <Paragraph>
@@ -27,7 +30,6 @@ const WhyHooksLesson2: React.FC = () => {
 
       <Paragraph>
         <div className="renderWithHooksFaker my-20" />
-        <div className="dispatch my-20" />
         <Title level={4}>小结</Title>
         hooks 对象本质上是主要以三种处理策略存在 React 中：
         <ol>

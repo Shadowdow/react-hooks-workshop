@@ -6,7 +6,7 @@ const { Title, Paragraph, Text } = Typography;
 const WhyHooksLesson3: React.FC = () => {
   return (
     <Typography>
-      <Title>函数组件初始化</Title>
+      <Title>Hook初始化</Title>
       <Divider />
       <Paragraph>
         <div className="fourhooks mt-20 mb-20" />
@@ -18,11 +18,12 @@ const WhyHooksLesson3: React.FC = () => {
         <Text code>workInProgress.memoizedState</Text>。
       </Paragraph>
       <Divider />
-      <Title level={3}>函数组件初始化</Title>
+      <Title level={3}>Hook初始化</Title>
       <div className={"flex my-20 items-center"}>
         <div className="mountWork " />
-        <div className="hooksLink ml-40" />
+        <div className="workInProgressHook ml-80" />
       </div>
+      <div className="currentRenderingFiber mt-80 mb-40" />
       <Paragraph>
         当函数组件执行之后，四个hooks和workInProgress将是如图的关系
         <div className="memoizedState1 mt-20 mb-20" />

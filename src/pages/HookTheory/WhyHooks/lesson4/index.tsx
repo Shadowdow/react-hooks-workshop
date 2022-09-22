@@ -7,7 +7,7 @@ const { Title, Paragraph, Text } = Typography;
 const WhyHooksLesson4: React.FC = () => {
   return (
     <Typography>
-      <Title>函数组件更新阶段</Title>
+      <Title>Hook更新阶段</Title>
       <Divider />
       <div className={"flex items-center mt-20 mb-20"}>
         <div className="updateHookSimple " />

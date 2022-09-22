@@ -7,11 +7,10 @@ const { Title, Paragraph, Text } = Typography;
 const ExtraLesson: React.FC = () => {
   return (
     <Typography>
-      <Title> React Render & Fiber</Title>
+      <Title> React Fiber && 双缓冲树</Title>
       <div className="doubleTree mt-20 mb-20" />
       <div className={"flex my-20 items-center"}>
         <div className="doubleStep " />
-        <div className="twoPhase ml-40" />
       </div>
 
       <Divider className={"bg-black"} />
