@@ -20,8 +20,6 @@ const UseStateLesson3: React.FC = () => {
       <Paragraph>
         <div className={"flex items-center"}>
           <div className="updateStateDemo my-20" />
-          <div className="Update ml-40" />
-          <div className="HookQueue ml-40" />
         </div>
         <UpdateStateDemo />
         <Title level={4}>点击按钮， 打印 3</Title>

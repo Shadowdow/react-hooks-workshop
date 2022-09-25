@@ -40,19 +40,9 @@
     height: 189px;
 }
 
-.HookQueue {
-    background-image: url("queueLink.png");
-    background-size: 100%;
-    width: 269px;
-    height: 286px;
-}
 
-.Update {
-    background-image: url("Update.png");
-    background-size: 100%;
-    width: 304px;
-    height: 410px;
-}
+
+
 
 .inVisible{
     display: none;

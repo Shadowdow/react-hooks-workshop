@@ -18,3 +18,38 @@
     width: 800px;
     height: 550px;
 }
+
+.doubleTree {
+    background-image: url("doubleTree.jpg");
+    background-size: 100%;
+    width: 754px;
+    height: 547px;
+}
+
+.updateHookSimple {
+    background-image: url("updateHookSimple.png");
+    background-size: 100%;
+    width: 606px;
+    height: 512px;
+}
+
+.mountState {
+    background-image: url("mountState.png");
+    background-size: 100%;
+    width: 608px;
+    height: 446px;
+}
+
+.updateStateSimple {
+    background-image: url("updateStateSimple.png");
+    background-size: 100%;
+    width: 456px;
+    height: 429px;
+}
+
+.pushEffectSimple {
+    background-image: url("pushEffectSimple.png");
+    background-size: 100%;
+    width: 520px;
+    height: 378px;
+}

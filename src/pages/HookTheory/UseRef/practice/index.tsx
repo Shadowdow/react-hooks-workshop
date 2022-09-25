@@ -1,15 +1,10 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import ReactDOM from "react-dom";
 import { Button } from "antd";
 
 // 当前的ref值
 let lastRef;
-function useRef(initialRef) {
-  lastRef = lastRef || initialRef;
-  return {
-    current: lastRef,
-  };
-}
+function MyUseRef(initialRef) {}
 
 const UseRefPractice: React.FC = () => {
   const num = useRef(0);

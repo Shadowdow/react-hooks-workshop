@@ -37,8 +37,26 @@ const Summary: React.FC = () => {
       <div className="mountWork my-20" />
       <div className="memoizedState2 my-20" />
       <Title level={3}>函数组件更新</Title>
+      <div className={"flex items-center mt-20 mb-20"}>
+        <div className="updateHookSimple " />
+        <div className="doubleTree ml-40" />
+      </div>
+      <div className={" mt-20 mb-20"}>
+        <Title level={3}>UseState 初始化和更新</Title>
 
-      <Title level={3}>常用hooks的初始化和更新过程，以及手写练习</Title>
+        <div className={"flex items-center mt-20 mb-20"}>
+          <div className="mountState " />
+          <div className="updateStateSimple ml-40" />
+        </div>
+      </div>
+
+      <div className={" mt-20 mb-20"}>
+        <Title level={3}>useEffect pushState</Title>
+
+        <div className={"flex items-center mt-20 mb-20"}>
+          <div className="pushEffectSimple " />
+        </div>
+      </div>
     </Typography>
   );
 };

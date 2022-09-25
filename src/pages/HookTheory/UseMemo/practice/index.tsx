@@ -7,26 +7,21 @@ let lastMemo;
 // 当前的memo的deps
 let lastMemoDependencies;
 
-// function useMemo(callback, dependencies) {
-//   // 如果 lastMemoDependencies 存在
-//   if (lastMemoDependencies) {
-//     // 更新时渲染
-//     // 判断依赖是否改变
-//     let changed = !dependencies.every(
-//       (item, index) => item == lastMemoDependencies[index]
-//     );
-//     // 如果依赖改变，该怎么办
-//     if (changed) {
-//       lastMemo = callback();
-//       lastMemoDependencies = dependencies;
-//     }
-//   } else {
-//     // 初始化
-//     lastMemo = callback();
-//     lastMemoDependencies = dependencies;
-//   }
-//   return lastMemo;
-// }
+function myUseMemo(callback, dependencies) {
+  // 如果 lastMemoDependencies 存在
+  if (lastMemoDependencies) {
+    // 更新时渲染
+    // 判断依赖是否改变 (补全代码)
+    let changed;
+
+    // 如果依赖改变，该怎么办 (补全代码)
+    if (changed) {
+    }
+  } else {
+    // 初始化(补全代码)
+  }
+  return lastMemo;
+}
 
 function Child({ data, addClick }) {
   console.log("child---render");
