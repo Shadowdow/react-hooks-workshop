@@ -1,6 +1,7 @@
 import React from "react";
-import { Typography } from "antd";
+import { Divider, Typography } from "antd";
 import Demo1 from "./demo1";
+import UseEffectPracticeDemo from "../../Practice/useEffect/useEffectPractice";
 
 const { Title } = Typography;
 const UseEffectPractice: React.FC = () => {
@@ -12,6 +13,10 @@ const UseEffectPractice: React.FC = () => {
       <div id={"useEffectPractice"}>
         <Demo1 />
       </div>
+
+      <Divider className={"bg-black mt-80"} />
+      <div>练习</div>
+      <UseEffectPracticeDemo />
     </>
   );
 };

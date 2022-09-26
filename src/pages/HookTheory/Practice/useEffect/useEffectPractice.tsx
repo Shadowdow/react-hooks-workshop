@@ -19,7 +19,7 @@ function myUseEffect(callback, depArray) {
   index++;
 }
 
-const Demo1: React.FC = () => {
+const UseEffectPracticeDemo: React.FC = () => {
   let [num, setNum] = useState(0);
 
   useEffect(() => {
@@ -35,8 +35,8 @@ const Demo1: React.FC = () => {
 };
 
 function render() {
-  ReactDOM.render(<Demo1 />, document.getElementById("root"));
+  ReactDOM.render(<UseEffectPracticeDemo />, document.getElementById("root"));
 }
 
 render();
-export default Demo1;
+export default UseEffectPracticeDemo;
